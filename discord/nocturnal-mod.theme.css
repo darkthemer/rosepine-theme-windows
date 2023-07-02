@@ -1,0 +1,247 @@
+/**
+* @name Nocturnal
+* @version 3.0.1
+* @description For when default discord just isn't dark enough, a theme for those who live a night
+* @author Spectra
+* @invite PZdnCVD
+* @source https://github.com/xcruxiex/themes
+* @website https://betterdiscord.app/theme/Nocturnal
+*/
+@import url("https://xcruxiex.github.io/themes/themes-cores/nocturnal.css");
+
+@import url("https://xcruxiex.github.io/themes/core/badges.css");
+@import url("https://xcruxiex.github.io/themes/core/custom-font.css");
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css"); /* Radial Status */
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css"); /* Horizontal Server List */
+
+:root {
+    --backgroundColor01: #1f1d2e;
+    --backgroundColor02: #191724;
+    --backgroundColor03: #1f1d2e;
+    --backgroundColor04: #26233a;
+    --mainColor: #ebbcba;
+    --gradientColor01: #ebbcba;
+    --gradientColor02: #ea9a97;
+
+    --textColor01: #e0def4;
+    --textColor02: #908caa;
+    --textColor03: #6e6a86;
+
+    /* Better Hljs */
+    --backgroundCode: #191724;
+    --backgroundName: rgba(0, 0, 0, 0.2);
+
+    /* Radial Status */
+    --rs-small-spacing: 2px;
+    --rs-large-spacing: 3px;
+    --rs-width: 2px;
+    --rs-avatar-shape: 20%;
+    --rs-online-color: #9ccfd8;
+    --rs-idle-color: #f6c177;
+    --rs-dnd-color: #eb6f92;
+    --rs-offline-color: #6e6a86;
+    --rs-streaming-color: #c4a7e7;
+    --rs-invisible-color: #6e6a86;
+    --rs-phone-visible: block;
+    --rs-phone-color: var(--rs-online-color);
+
+    --customFont: "gg sans", sans-serif;
+}
+
+:root {
+    --HSL-server-icon-size: 20px;
+    --HSL-server-spacing: 20px;
+    --HSL-server-direction: column;
+}
+
+/* fix */
+/* more consistent colors */
+:root,
+.theme-dark {
+    --background-primary: var(--backgroundColor02);
+    --background-secondary: var(--backgroundColor02);
+    --background-floating: var(--backgroundColor02);
+    --background-accent: var(--backgroundColor01);
+    --background-modifier-hover: var(--backgroundColor01);
+    --background-modifier-selected: var(--backgroundColor04);
+    --background-modifier-active: var(--backgroundColor04);
+    --text-normal: var(--textColor01);
+    --header-primary: var(--textColor01);
+    --interactive-active: var(--textColor01);
+    --header-secondary: var(--textColor02);
+    --channels-default: var(--textColor02);
+    --interactive-normal: var(--textColor02);
+    --text-muted: var(--textColor03);
+    --interactive-muted: var(--textColor03);
+    --divider-color: var(--rs-dnd-color);
+    --status-danger: var(--rs-dnd-color);
+    --text-positive: var(--rs-online-color);
+    --scrollbar-auto-scrollbar-color-thumb: var(--backgroundColor03);
+    --scrollbar-auto-scrollbar-color-track: var(--backgroundColor02);
+    --scrollbar-auto-thumb: var(--backgroundColor03);
+    --scrollbar-auto-track: var(--backgroundColor02);
+    --scrollbar-thin-thumb: var(--backgroundColor03);
+    --scrollbar-thin-track: hsl(var(--backgroundColor02));
+}
+::selection {
+    background: var(--mainColor);
+    color: var(--backgroundColor01);
+}
+
+/* titlebar removal */
+div[class*="titleBar-"] {
+    display: none !important;
+}
+
+/* dividers instead of folder icons + expanded folders background removal */
+.expandedFolderIconWrapper-3RwQpD {
+    transform: scale(0.1, 2);
+}
+#app-mount .expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi) {
+    background: transparent !important;
+}
+
+/* server icon badges adjustment */
+.lowerBadge-3j0ZAg {
+    transform: translate(5px, 2px) !important;
+}
+.base-3IDx3L {
+    min-width: calc(var(--HSL-server-icon-size) / 2) !important;
+    min-height: calc(var(--HSL-server-icon-size) / 2) !important;
+    line-height: calc(var(--HSL-server-icon-size) / 2) !important;
+    font-size: calc(var(--HSL-server-icon-size) / 3) !important;
+    width: unset !important;
+    height: unset;
+}
+.upperBadge-1d6YsW {
+    transform: translate(5px, -2px) !important;
+}
+.iconBadge-1D5-9X {
+    width: unset !important;
+}
+.upperBadge-1d6YsW svg.icon-2Ug6UV {
+    width: calc(var(--HSL-server-icon-size) / 3) !important;
+    height: calc(var(--HSL-server-icon-size) / 3) !important;
+}
+
+/* custom active server pill */
+#app-mount .guilds-2JjMmN [class*="pill"] {
+    top: calc(var(--server-size) / -2 + var(--server-size) + 8px) !important;
+}
+.item-2LIpTv {
+    background-color: var(--mainColor);
+}
+#app-mount .guilds-2JjMmN [class*="pill"] span {
+    width: 2px !important;
+}
+
+/* top bar removal + hoverable channel description and search bar */
+#app-mount .container-ZMc96U.themed-Hp1KC_ {
+    background: unset !important;
+    background-image: linear-gradient(
+        var(--backgroundColor02) 30%,
+        70%,
+        transparent
+    ) !important;
+}
+.container-ZMc96U {
+    position: absolute !important;
+}
+.children-3xh0VB > *:not(.topic-11NuQZ.expandable-3CaLeS, .topPill-2vcLsa) {
+    display: none;
+}
+.topic-11NuQZ.expandable-3CaLeS,
+.topPill-2vcLsa,
+.search-2Mwzzq {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.toolbar-3_r2xA > *:not(.search-39IXmY) {
+    visibility: hidden;
+    width: 0;
+    margin: 0;
+}
+.topic-11NuQZ.expandable-3CaLeS:hover,
+.topPill-2vcLsa:hover,
+.search-2Mwzzq.open-1F8u2c {
+    opacity: 1;
+}
+.searchBar-jGtisZ,
+.resizeHandle-PBRzPC {
+    background: transparent;
+}
+
+/* custom unread bar + clickable elements adjustment */
+#app-mount .newMessagesBar-1hF-9G,
+.barButtonBase-Sk2mdB {
+    background-color: var(--backgroundColor03);
+    color: var(--mainColor);
+}
+.newMessagesBar-1hF-9G.barBase-3xxDXu {
+    padding-top: 40px;
+}
+.tabBody-2dgbAs,
+.searchResultsWrap-5RVOkx {
+    margin-top: 40px;
+}
+
+/* cleaner floating boxes, cards */
+#app-mount .emptyCard-KDifrB .inset-SbsSFp,
+#app-mount .emptyCard-KDifrB .section-3G9aLW,
+#app-mount .wrapper-2RrXDg .inset-SbsSFp,
+#app-mount .wrapper-2RrXDg .section-3G9aLW {
+    box-shadow: none;
+}
+
+/* consistent avatar corner rounding */
+.avatar-2e8lTP,
+.avatar-3FKimL {
+    border-radius: var(--rs-avatar-shape);
+}
+.svg-lIB-lq.avatarHint-k7pYop foreignObject {
+    mask: none !important;
+}
+.avatarHintInner-2HUAWj {
+    border-radius: var(--rs-avatar-shape);
+    transform: scale(0.9);
+}
+
+/* better readability of user mentions */
+#app-mount .wrapper-1ZcZW- {
+    color: var(--backgroundColor02);
+    text-shadow: none;
+}
+
+/* custom unread divider */
+.isUnread-3Lojb- .content-3spvdd {
+    border: 1px solid var(--divider-color);
+}
+.unreadPill-3nEWYM {
+    color: var(--backgroundColor02);
+}
+
+/* message input field with borders + lesser buttons + consistent emoji picker colors */
+.channelTextArea-1FufC0.channelTextArea-1VQBuV {
+    border: 3px solid var(--backgroundColor04) !important;
+}
+.channelTextArea-1FufC0.channelTextArea-1VQBuV:hover {
+    border: 3px solid var(--mainColor) !important;
+}
+.channelTextArea-1FufC0.channelTextArea-1VQBuV:focus-within {
+    border: 3px solid var(--backgroundColor03) !important;
+}
+.buttons-uaqb-5 > *:not(:last-child) {
+    display: none;
+}
+.sprite-2lxwfc {
+    filter: sepia(1) brightness(0.8) hue-rotate(300deg) !important;
+}
+.inner-NQg18Y > div:nth-child(2) {
+    order: 2;
+}
+.inner-NQg18Y > div:nth-child(3) {
+    order: 1;
+}
+.inner-NQg18Y > div:nth-child(4) {
+    order: 3;
+}

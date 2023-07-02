@@ -1,0 +1,67 @@
+{
+    "background": {
+        "id": "AoKvbXRWmLwf",
+        "key": "background/unsplash",
+        "display": { "blur": 6, "luminosity": -0.5 }
+    },
+    "data/1TKyICZlqCHS": { "category": "inspire" },
+    "data/mPLLTE9CWmC7": { "messages": ["-——-"] },
+    "focus": false,
+    "locale": "en",
+    "timeZone": null,
+    "widget/1TKyICZlqCHS": {
+        "id": "1TKyICZlqCHS",
+        "key": "widget/quote",
+        "order": 2,
+        "display": {
+            "position": "middleCentre",
+            "fontWeight": 400,
+            "fontSize": 12
+        }
+    },
+    "widget/DGQIis4kH708": null,
+    "widget/TPFYh_m6v43h": null,
+    "widget/default-greeting": null,
+    "widget/default-time": null,
+    "widget/eVzuQAlaEfz8": {
+        "id": "eVzuQAlaEfz8",
+        "key": "widget/greeting",
+        "order": 0,
+        "display": {
+            "position": "middleCentre",
+            "fontWeight": 700,
+            "fontSize": 16
+        }
+    },
+    "widget/mPLLTE9CWmC7": {
+        "id": "mPLLTE9CWmC7",
+        "key": "widget/message",
+        "order": 1,
+        "display": {
+            "position": "middleCentre",
+            "fontWeight": 300,
+            "fontSize": 8
+        }
+    },
+    "widget/zof3izrW_BaM": null,
+    "widget/zv2ZQ6iZ8EoX": null,
+    "data/AoKvbXRWmLwf": {
+        "by": "official",
+        "collections": "",
+        "featured": false,
+        "paused": false,
+        "search": "",
+        "topics": "bo8jQKTaE0Y",
+        "timeout": 900
+    },
+    "widget/EvUYUq78Gk8i": {
+        "id": "EvUYUq78Gk8i",
+        "key": "widget/css",
+        "order": 3,
+        "display": { "position": "middleCentre" }
+    },
+    "data/EvUYUq78Gk8i": {
+        "input": ".credit, .Overlay {\n  display: none !important;\n}\n.Dashboard.dark {\n  color: #ebbcba;\n}\n.Unsplash.fullscreen, .Dashboard.dark {\n  background-color: #191724;\n}\n.image.fullscreen {\n  mix-blend-mode: overlay;\n  filter: grayscale(1)\n  contrast(0.25) brightness(1.75) !important;\n}\n.fullscreen {\n  transition: none !important;\n}"
+    },
+    "version": 3
+}

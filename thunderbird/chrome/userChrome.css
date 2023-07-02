@@ -1,0 +1,248 @@
+:root {
+    --accent-color: #ebbcba;
+    --accent-color-dim: #584850;
+
+    --lwt-accent-color: rgb(25, 23, 36) !important;
+    --lwt-text-color: rgba(224, 222, 244) !important;
+    --arrowpanel-background: rgb(25, 23, 36) !important;
+    --panel-disabled-color: rgba(144, 140, 170, 0.5) !important;
+    --panel-description-color: rgba(144, 140, 170, 0.7) !important;
+    --arrowpanel-color: rgba(144, 140, 170, 1) !important;
+    --arrowpanel-border-color: rgb(110, 106, 134) !important;
+    --toolbar-field-background-color: rgb(25, 23, 36) !important;
+    --toolbar-field-color: rgb(224, 222, 244) !important;
+    --toolbar-field-border-color: rgba(0, 0, 0, 0) !important;
+    --toolbar-field-focus-background-color: rgba(38, 35, 58, 1) !important;
+    --toolbar-field-focus-color: rgb(224, 222, 244) !important;
+    --toolbar-field-focus-border-color: rgb(38, 35, 58) !important;
+    --lwt-toolbar-field-highlight: rgba(38, 35, 58, 1) !important;
+    --lwt-toolbar-field-highlight-text: rgb(224, 222, 244) !important;
+    --toolbar-field-highlight: rgba(235, 188, 186) !important;
+    --toolbar-field-highlight-color: rgb(25, 23, 36) !important;
+    --tab-loading-fill: rgb(38, 35, 58) !important;
+    --lwt-tab-text: rgb(144, 140, 170) !important;
+    --lwt-tab-line-color: rgba(0, 0, 0, 0) !important;
+    --lwt-background-tab-separator-color: rgba(0, 0, 0, 0) !important;
+    --toolbar-bgcolor: rgb(25, 23, 36) !important;
+    --toolbar-color: rgb(144, 140, 170) !important;
+    --lwt-tabs-border-color: rgba(0, 0, 0, 0) !important;
+    --toolbarseparator-color: rgb(57, 53, 82) !important;
+    --chrome-content-separator-color: rgb(57, 53, 82) !important;
+    --lwt-selected-tab-background-color: rgb(31, 29, 46) !important;
+    --autocomplete-popup-highlight-background: rgb(31, 29, 46) !important;
+    --autocomplete-popup-highlight-color: rgb(224, 222, 244) !important;
+    --sidebar-background-color: rgb(25, 23, 36) !important;
+    --sidebar-text-color: rgb(144, 140, 170) !important;
+    --sidebar-highlight-background-color: rgb(31, 29, 46) !important;
+    --sidebar-highlight-text-color: rgb(25, 23, 36) !important;
+    --sidebar-border-color: rgb(25, 23, 36) !important;
+    --sidebar-highlight-border-color: rgb(38, 35, 58) !important;
+    --toolbarbutton-icon-fill: rgb(144, 140, 170) !important;
+    --lwt-toolbarbutton-hover-background: rgb(31, 29, 46) !important;
+    --lwt-toolbarbutton-active-background: rgb(31, 29, 46) !important;
+}
+
+#mail-notification-top,
+#spacesPinnedButton {
+    /* remove remote content warning */
+    display: none;
+}
+
+.spaces-toolbar:not([hidden]) {
+    /* remove spaces button */
+    background-image: none !important;
+    border-inline-end: none !important;
+}
+
+treecol,
+treecolpicker {
+    box-shadow: none !important;
+}
+
+.searchBox:hover {
+    box-shadow: none !important;
+    border: 1px solid var(--sidebar-highlight-border-color) !important;
+}
+
+.mail-toolbox:-moz-lwtheme {
+    background-image: none !important;
+}
+
+:root:-moz-lwtheme treecol {
+    border-inline-end: 1px solid var(--sidebar-highlight-border-color) !important;
+}
+
+:root[lwt-tree-brighttext] {
+    --bg-color: var(--sidebar-background-color) !important;
+}
+
+:root:-moz-lwtheme treecol:not([hideheader="true"]),
+:root:-moz-lwtheme treecolpicker:not([hideheader="true"]) {
+    padding-block: 5px !important;
+    margin-top: 5px;
+}
+
+.plain-button.tab-close-button {
+    /* remove close tab button */
+    display: none !important;
+}
+
+#widget-overflow,
+#appMenu-popup {
+    margin-top: 6px !important;
+}
+
+/* Thanks to https://github.com/ScanuNicco/Modern-ThunderBird */
+/* On macos, the titlebar has to be made high enough */
+
+#navigation-toolbox,
+#tabmail-tabs,
+#tabmail-arrowscrollbox {
+    /* Outer tab containers */
+    min-height: 45px !important;
+}
+
+.tabmail-tab {
+    /* Give the tabs a bit of a margin */
+    margin: 4px !important;
+}
+
+.tab-background {
+    /* Round tab corners and add a bit of padding */
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.tab-line {
+    /* Eliminate the line at the top of the tab */
+    height: 0px !important;
+    display: none !important;
+}
+
+.tabmail-tab::after,
+.tabmail-tab::before {
+    /* Eliminate the line between inactive tabs */
+    border: none !important;
+}
+
+.mail-toolbox::after,
+.contentTabToolbox::after {
+    /* Eliminate border beow the mail toolbar */
+    border-bottom: none !important;
+}
+
+.toolbarbutton-1,
+.searchBox,
+.themeableSearchBox {
+    /* Eliminate borders, round corners, and increase height on buttons and search bars */
+    border: none !important;
+    border-radius: 5px !important;
+    height: 31px !important;
+}
+
+.panel-arrowbox {
+    /* hide the arrow on popup menus */
+    display: none;
+}
+
+.panel-arrowcontent {
+    /* Eliminate borders, round corners, and increase padding on popup menus */
+    padding: 5px !important;
+    border-radius: 5px;
+    border: none;
+}
+
+#main-window,
+#mail-toolbox {
+    /* aero/mica window transparency */
+    background-color: transparent !important;
+    -moz-appearance: -moz-win-glass !important;
+}
+
+toolbar#nav-bar {
+    /* aero/mica window transparency */
+    background: none !important;
+}
+
+#navigation-toolbox:-moz-lwtheme,
+#ab-toolbox:-moz-lwtheme,
+#compose-toolbox:-moz-lwtheme {
+    /* aero/mica window transparency */
+    --lwt-accent-color: transparent !important;
+}
+
+/* .tabmail-tab .tab-background[selected="true"]:-moz-lwtheme {
+    background-image: linear-gradient(
+        rgba(224, 222, 244, 0.1),
+        rgba(224, 222, 244, 0.1)
+    ) !important;
+} */
+
+.gloda-search:-moz-lwtheme,
+.remote-gloda-search:-moz-lwtheme,
+:root[lwt-tree] .themeableSearchBox,
+#peopleSearchInput:not([focused="true"]):-moz-lwtheme {
+    /* aero/mica window transparency */
+    --toolbar-field-background-color: transparent !important;
+}
+
+#threadTree {
+    /* reassign thread tree color */
+    background-color: var(--sidebar-border-color) !important;
+}
+
+.header-recipient:hover,
+.header-newsgroup:hover {
+    background-color: var(--toolbar-field-highlight) !important;
+    color: var(--toolbar-field-highlight-color) !important;
+}
+
+/* scrollbar styling -not working
+thumb {
+    appearance: none !important;
+    background-color: #1f1d2e !important;
+    border-radius: 6px !important;
+    border: 2px solid #26233a !important;
+}
+slider {
+    appearance: none !important;
+    background-color: var(--arrowpanel-background);
+}
+*/
+
+treechildren::-moz-tree-row(selected) {
+    background-color: var(--lwt-selected-tab-background-color) !important;
+    border: none !important;
+    border-radius: 6px !important;
+}
+treechildren::-moz-tree-row(hover) {
+    background-color: var( --toolbar-field-focus-border-color) !important;
+    border: 2px solid var(--accent-color) !important;
+    border-radius: 6px !important;
+}
+treechildren::-moz-tree-cell-text(selected) {
+    color: var(--accent-color) !important;
+}
+treechildren::-moz-tree-cell-text(hover) {
+    color: var(--accent-color) !important;
+}
+
+:root:-moz-lwtheme treecol:hover, :root:-moz-lwtheme treecolpicker:hover {
+    background-color: var(--lwt-toolbar-field-highlight) !important;
+    border-radius: 0 0 6px 6px;
+}
+
+#qfb-separator {
+    /* quick filter bar */
+    appearance: none !important;
+}
+#quick-filter-bar-main-bar toolbarbutton {
+    stroke: var(--toolbarbutton-icon-fill) !important;
+}
+
+.tabmail-tab:-moz-lwtheme {
+    color: var(--lwt-tab-text) !important;
+}
+.tabmail-tab[visuallyselected="true"]:-moz-lwtheme {
+    color: var(--lwt-text-color) !important;
+}

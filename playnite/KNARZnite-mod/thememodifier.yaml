@@ -1,0 +1,15 @@
+Constants:
+- General
+- HidePlayButtonForManualGames: 'Hide install button on not installed manually added games'
+- DisplayFeaturesAsList: Display features as a list (true) or box (false)
+- DisplayTagsAsList: Display tags as a list (true) or box (false)
+- DisplayLinksAsList: Display links as a list (true) or box (false)
+- Details View
+- DetailsViewDetailsMaxWidth: 'Maximum width of details'
+- DetailsViewCoverDisplayLibraryBanner: 'Show banners (Requires ThemeExtras extension)'
+- DetailsViewAllowUseOfLogos: 'Allow use of logos (Requires Extra Metadata Loader extension)'
+- DetailsViewHideGameNameIfLogoVisible: 'Hide game name if logo is visible'
+- DetailsViewLibraryGameShowFavorite: 'Show favorites icon in list view'
+- Grid View
+- GridViewCoverDisplayLibraryBanner: 'Show banners (Requires ThemeExtras extension)'
+- GridViewLibraryGameShowFavorite: 'Show favorites icon'

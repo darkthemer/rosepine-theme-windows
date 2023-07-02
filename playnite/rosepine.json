@@ -1,0 +1,125 @@
+﻿{
+    "Name": "Rose Pine",
+    "ThemeColorsElements": [
+        {
+            "Name": "ControlBackgroundBrush",
+            "ColorString": "#FF1F1D2E-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "TextBrush",
+            "ColorString": "#FFE0DEF4-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "TextBrushDarker",
+            "ColorString": "#FF908CAA-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "TextBrushDark",
+            "ColorString": "#FF1F1D2E-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "NormalBrush",
+            "ColorString": "#FF191724-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "NormalBrushDark",
+            "ColorString": "#FF26233A-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "NormalBorderBrush",
+            "ColorString": "#FF1F1D2E-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "HoverBrush",
+            "ColorString": "#FF26233A-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "GlyphBrush",
+            "ColorString": "#FFEBBCBA-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "HighlightGlyphBrush",
+            "ColorString": "#FF1F1D2E-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "PopupBorderBrush",
+            "ColorString": "#FF6E6A86-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "TooltipBackgroundBrush",
+            "ColorString": "#FF191724-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "ButtonBackgroundBrush",
+            "ColorString": "#FF1F1D2E-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "GridItemBackgroundBrush",
+            "ColorString": "#FF1F1D2E-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "PanelSeparatorBrush",
+            "ColorString": "#FF1F1D2E-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "WindowPanelSeparatorBrush",
+            "ColorString": "#FF191724-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "PopupBackgroundBrush",
+            "ColorString": "#FF191724-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "CheckBoxCheckMarkBkBrush",
+            "ColorString": "#FF191724-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "PositiveRatingBrush",
+            "ColorString": "#FF9CCFD8-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "NegativeRatingBrush",
+            "ColorString": "#FFEB6F92-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "MixedRatingBrush",
+            "ColorString": "#FFF6C177-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "WarningBrush",
+            "ColorString": "#FFEB6F92-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "ExpanderBackgroundBrush",
+            "ColorString": "#FF191724-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        },
+        {
+            "Name": "WindowBackgourndBrush",
+            "ColorString": "#FF191724-1",
+            "ColorLinear": { "StartPoint": "0,0", "EndPoint": "0,0" }
+        }
+    ]
+}

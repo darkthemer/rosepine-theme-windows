@@ -1,0 +1,358 @@
+/*==============================================================================================*
+
+  +-----+-----+-----+-----+-----+-----+-----+
+  | █▀▀ | ▄▀█ | █▀▀ | █▀▀ | ▄▀█ | █▀▄ | █▀▀ |
+  | █▄▄ | █▀█ | ▄▄█ | █▄▄ | █▀█ | █▄▀ | ██▄ |
+  +-----+-----+-----+-----+-----+-----+-----+
+
+  Description:    Cascade is a minimalstic and keyboard centered custom theme removing a lot of the
+                  subjective clutter default Firefox comes with. This theme is highly inspired by the
+                  stylistic choices of SimpleFox by Miguel Ávila. 🦊
+                  https://github.com/migueravila/SimpleFox
+
+  Author:         Andreas Grafen
+                  (https://andreas.grafen.info)
+
+  Repository:     https://github.com/andreasgrafen/cascade
+                  Thank you Nick, Abdallah, Benyamin and Wael for all the great suggestions for improvements! ♡
+
+                  Nick:     https://github.com/nicksundermeyer
+                  Abdallah: https://github.com/HeiWiper
+                  Benyamin: https://github.com/benyaminl
+                  Wael:     https://github.com/wael444
+
+                  If you're looking for a **mouse-friendly** clone please check out Waterfall.
+                  https://github.com/crambaud/waterfall
+
+*==============================================================================================*/
+
+@import "includes/cascade-config.css";
+@import "includes/cascade-rose-pine.css";
+
+@import "includes/cascade-layout.css";
+@import "includes/cascade-responsive-windows-fix.css";
+@import "includes/cascade-floating-panel.css";
+
+@import "includes/cascade-nav-bar.css";
+@import "includes/cascade-tabs.css";
+
+:root {
+    --uc-popup-border-colour: rgb(110, 106, 134);
+    --uc-seperator-colour: rgb(38, 35, 58);
+
+    /* popup panels */
+    --arrowpanel-background: var(--uc-base-colour) !important;
+    --arrowpanel-border-color: var(--uc-popup-border-colour) !important;
+    --arrowpanel-color: var(--uc-inverted-colour) !important;
+    --arrowpanel-dimmed: var(--uc-muted-colour) !important;
+
+    /* input field */
+    --input-bgcolor: var(--toolbar-field-background-color) !important;
+    --input-color: var(--toolbar-field-color) !important;
+    --input-border-color: var(--toolbar-field-border-color) !important;
+
+    /* buttons - checkbox, etc */
+    --button-primary-bgcolor: var(--uc-accent-colour) !important;
+    --button-primary-hover-bgcolor: var(--uc-accent-colour) !important;
+    --button-primary-active-bgcolor: var(--uc-accent-colour) !important;
+    --button-primary-color: var(--uc-base-colour) !important;
+    --button-bgcolor: var(--uc-base-colour) !important;
+    --button-hover-bgcolor: var(--uc-highlight-colour) !important;
+    --button-active-bgcolor: var(--uc-muted-colour) !important;
+    --toolbarbutton-icon-fill: var(--uc-muted-colour) !important;
+    --urlbar-box-active-bgcolor: var(--uc-accent-colour) !important;
+}
+
+/* move menubar to left-most - cascade fix */
+#toolbar-menubar {
+    margin-left: -35vw;
+}
+
+#navigator-toolbox {
+    /* add padding to main bar */
+    padding: 3px !important;
+}
+
+#identity-icon-label {
+    display: none !important;
+}
+
+/* center url text */
+#urlbar-input-container {
+    text-align: center !important;
+}
+
+/* url bar colors */
+.urlbarView-row[selected],
+.urlbarView-row[row-selectable]:not([selected]):hover {
+    background-color: var(--uc-highlight-colour) !important;
+}
+#urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner,
+.urlbarView:not([noresults]) > .search-one-offs:not([hidden]) {
+    border-top: 1px solid var(--uc-seperator-colour) !important;
+}
+
+/* inactive tabs */
+.tabbrowser-tab[fadein]:not([selected]):not([pinned]) .tab-icon-image {
+    filter: contrast(0.25) opacity(0.25);
+}
+.tabbrowser-tab:not([visuallyselected="true"], [multiselected]) {
+    color: var(--uc-muted-colour) !important;
+}
+
+/* private browsing indicator */
+.private-browsing-indicator-icon {
+    opacity: 0.75 !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+[data-l10n-id="private-browsing-indicator-label"] {
+    display: none !important;
+}
+
+/* sidebar */
+#sidebar-header {
+    border-bottom: none !important;
+    --sidebar-text-color: var(--uc-inverted-colour) !important;
+    color: var(--uc-inverted-colour) !important;
+    --sidebar-background-color: var(--uc-base-colour) !important;
+    background-color: var(--uc-base-colour) !important;
+}
+.sidebar-splitter {
+    border: none !important;
+}
+#search-box {
+    appearance: none !important;
+    background-color: var(--toolbar-field-background-color) !important;
+    color: var(--toolbar-field-color) !important;
+    border: 2px solid var(--uc-seperator-colour) !important;
+    border-radius: 3px !important;
+}
+#search-box:hover {
+    border: 2px solid var(--uc-accent-colour) !important;
+    border-radius: 3px !important;
+}
+#search-box:active {
+    border: 2px solid var(--uc-highlight-colour) !important;
+    border-radius: 3px !important;
+}
+#viewButton {
+    appearance: none !important;
+    background-color: var(--toolbar-field-background-color) !important;
+    color: var(--toolbar-field-color) !important;
+    border: 2px solid var(--uc-seperator-colour) !important;
+    border-radius: 3px !important;
+}
+#viewButton:hover {
+    border: 2px solid var(--uc-accent-colour) !important;
+    border-radius: 3px !important;
+}
+#search-box:active {
+    color: var(--uc-muted-colour) !important;
+    border: 2px solid var(--uc-highlight-colour) !important;
+    border-radius: 3px !important;
+}
+.sidebar-placesTreechildren::-moz-tree-cell-text() {
+    color: var(--uc-inverted-colour) !important;
+}
+.sidebar-placesTreechildren::-moz-tree-cell() {
+    background: var(--uc-base-colour) !important;
+    margin: 0 3px !important;
+    border-radius: 6px !important;
+    border: 2px solid transparent !important;
+}
+.sidebar-placesTreechildren::-moz-tree-cell-text(hover) {
+    color: var(--uc-accent-colour) !important;
+}
+.sidebar-placesTreechildren::-moz-tree-cell(hover) {
+    background: var(--uc-highlight-colour) !important;
+    border: 2px solid var(--uc-accent-colour) !important;
+}
+.sidebar-placesTreechildren::-moz-tree-cell(selected) {
+    background: var(--uc-highlight-colour) !important;
+}
+
+/* findbar borders */
+.browserContainer > findbar {
+    border-top-color: transparent !important;
+}
+
+/* status panel */
+#statuspanel #statuspanel-label {
+    appearance: none !important;
+    border: 1px solid var(--uc-seperator-colour) !important;
+    background-color: var(--uc-highlight-colour) !important;
+    color: var(--uc-inverted-colour) !important;
+}
+
+/* places or library window */
+@-moz-document url(chrome://browser/content/places/places.xhtml)
+{
+    :root {
+        --organizer-color: var(--uc-inverted-colour) !important;
+        --organizer-deemphasized-color: var(--uc-muted-colour) !important;
+        --organizer-toolbar-background: var(--uc-base-colour) !important;
+        --organizer-pane-background: var(--uc-base-colour) !important;
+        --organizer-content-background: var(--uc-base-colour) !important;
+        --organizer-hover-background: var(--uc-highlight-colour) !important;
+        --organizer-selected-background: var(--uc-highlight-colour) !important;
+        --organizer-outline-color: var(--uc-seperator-colour) !important;
+        --organizer-toolbar-field-background: var(--uc-base-colour) !important;
+        --organizer-toolbar-field-background-focused: var(
+            --uc-highlight-colour
+        ) !important;
+        --organizer-border-color: var(--uc-popup-border-colour) !important;
+        --default-focusring: none !important;
+        --scrollbar-color: var(--uc-seperator-colour) !important;
+        --organizer-focus-selected-background: var(
+            --uc-seperator-colour
+        ) !important;
+        --organizer-focus-selected-color: var(--uc-accent-colour) !important;
+    }
+    treechildren,
+    richlistbox, richlistitem {
+        border: 2px solid transparent !important;
+        border-radius: 6px !important;
+        padding: 4px !important;
+        border-radius: 2px !important;
+    }
+    treechildren::-moz-tree-row(selected), richlistbox:where(:focus) > richlistitem[selected="true"], richlistitem[selected="true"] {
+        background-color: var(--organizer-selected-background) !important;
+        border-radius: 6px !important;
+    }
+    treechildren::-moz-tree-row(selected):hover, richlistbox:where(:focus) > richlistitem[selected="true"]:hover, richlistitem[selected="true"]:hover {
+        background-color: var(--organizer-selected-background) !important;
+        border-radius: 6px !important;
+    }
+    treechildren::-moz-tree-row(hover), richlistitem:hover {
+        background-color: var(--organizer-hover-background) !important;
+        border: 2px solid var(--organizer-focus-selected-color) !important;
+        border-radius: 6px !important;
+    }
+    treechildren::-moz-tree-cell-text(selected), richlistbox:where(:focus) > richlistitem[selected="true"], richlistitem[selected="true"] {
+        color: var(--organizer-focus-selected-color) !important;
+    }
+    treechildren::-moz-tree-cell-text(hover), richlistitem:hover {
+        color: var(--organizer-focus-selected-color) !important;
+    }
+    #placesView > splitter {
+        border-inline-end: none !important;
+    }
+    treecol,
+    treecolpicker {
+        background-color: var(--organizer-content-background) !important;
+    }
+    treecol,
+    .tree-columnpicker-button {
+        border-inline-start: none !important;
+    }
+    #placeContent {
+        padding: 4px !important;
+        border-radius: 2px !important;
+    }
+    #contentView treecol {
+        box-shadow: none !important;
+    }
+    #placesList {
+        padding: 4px 0 !important;
+    }
+    #placesView {
+        border-top: 0px solid var(--organizer-border-color) !important;
+    }
+    #placesToolbar,
+    #placesToolbox,
+    #places {
+        background-color: transparent !important;
+        -moz-appearance: -moz-win-borderless-glass !important;
+    }
+    #searchFilter {
+        background-color: transparent !important;
+    }
+    #detailsPane {
+        background-color: var(--organizer-content-background) !important;
+        border-top: 1px solid var(--organizer-outline-color) !important;
+    }
+    #detailsPane input,
+    .expander-up,
+    .expander-down {
+        border: 1px solid var(--organizer-outline-color) !important;
+    }
+}
+
+/* thanks to https://github.com/KibSquib48/MicaFox */
+#main-window {
+    background-color: transparent !important;
+    -moz-appearance: -moz-win-borderless-glass !important;
+}
+#navigator-toolbox {
+    background: transparent !important;
+}
+#TabsToolbar {
+    background-image: none !important; /* Windows 7 */
+}
+/* fix duplicate title bar buttons */
+.titlebar-buttonbox-container {
+    display: block;
+}
+.titlebar-buttonbox {
+    height: 30px;
+}
+.titlebar-button,
+.titlebar-close,
+.titlebar-button:hover,
+.titlebar-close:hover {
+    list-style-image: none !important;
+    background-color: transparent !important;
+}
+
+/* context menu */
+@media (-moz-windows-non-native-menus) {
+    menupopup {
+        --panel-border-radius: 6px !important;
+        --panel-padding: 6px 3px !important;
+        --panel-border-color: var(--uc-popup-border-colour) !important;
+        --panel-background: var(--uc-base-colour) !important;
+        --nested-margin: -10px !important;
+    }
+    menupopup,
+    panel {
+        --panel-color: var(--uc-inverted-colour) !important;
+        --panel-shadow: 0 6px var(--panel-shadow-margin) hsla(0, 0%, 0%, 0.2) !important;
+        --panel-shadow-margin: 10px !important;
+    }
+    menuseparator {
+        border-top: 1px solid var(--uc-seperator-colour) !important;
+    }
+    menu:where([_moz-menuactive="true"]:not([disabled="true"])),
+    menuitem:where([_moz-menuactive="true"]:not([disabled="true"])) {
+        background-color: var(--uc-highlight-colour) !important;
+        color: var(--uc-inverted-colour) !important;
+        border-radius: 3px;
+    }
+    menu:where([disabled="true"]),
+    menuitem:where([disabled="true"]),
+    menu:where([_moz-menuactive="true"][disabled="true"]),
+    menuitem:where([_moz-menuactive="true"][disabled="true"]) {
+        color: var(--uc-muted-colour) !important;
+    }
+    menu,
+    menuitem,
+    menucaption {
+        appearance: none !important;
+    }
+    #context-navigation
+        > .menuitem-iconic[_moz-menuactive="true"]
+        > .menu-iconic-left
+        > .menu-iconic-icon,
+    #context-navigation
+        > .menuitem-iconic[_moz-menuactive="true"][disabled="true"]
+        > .menu-iconic-left
+        > .menu-iconic-icon {
+        background-color: transparent !important;
+    }
+    menu:where([_moz-menuactive="true"][disabled="true"]),
+    menuitem:where([_moz-menuactive="true"][disabled="true"]) {
+        background-color: var(--uc-base-colour) !important;
+        border-radius: 3px;
+    }
+}

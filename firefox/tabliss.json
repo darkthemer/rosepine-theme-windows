@@ -1,0 +1,51 @@
+{
+    "data/S9gOwx-eZS6F": {
+        "by": "official",
+        "collections": "",
+        "featured": false,
+        "paused": false,
+        "search": "",
+        "topics": "bo8jQKTaE0Y",
+        "timeout": 86400
+    },
+    "data/7552216d-16ea-4211-806e-023a0e8c740b": { "name": "" },
+    "widget/default-time": null,
+    "widget/default-greeting": null,
+    "widget/b8e6f514-e08a-49dc-b1f6-3e624a7a3a36": null,
+    "locale": "en",
+    "timeZone": null,
+    "widget/9mTqB0T4pT6J": null,
+    "widget/ld135UpdF5si": null,
+    "widget/a53c651b-3d83-4af2-9ed0-1373bd4c69a1": {
+        "active": true,
+        "display": { "position": "middleCentre" },
+        "id": "a53c651b-3d83-4af2-9ed0-1373bd4c69a1",
+        "key": "widget/css",
+        "order": 0
+    },
+    "data/a53c651b-3d83-4af2-9ed0-1373bd4c69a1": {
+        "input": ".credit, .Overlay {\n  display: none !important;\n}\n.Dashboard.dark {\n  color: #ebbcba;\n}\n.Unsplash.fullscreen, .Dashboard.dark {\n  background-color: #191724;\n}\n.image.fullscreen {\n  mix-blend-mode: overlay;\n  filter: grayscale(1)\n  contrast(0.25);\n}\n.fullscreen {\n  transition: none !important;\n}"
+    },
+    "background": {
+        "id": "S9gOwx-eZS6F",
+        "key": "background/unsplash",
+        "display": { "blur": 0, "luminosity": -0.2 }
+    },
+    "widget/Qc_rdrk0Wn9D": null,
+    "widget/TV0NuiSHakUE": null,
+    "widget/5U3EBjHZLDPT": null,
+    "widget/7552216d-16ea-4211-806e-023a0e8c740b": {
+        "id": "7552216d-16ea-4211-806e-023a0e8c740b",
+        "key": "widget/greeting",
+        "active": true,
+        "display": {
+            "position": "middleCentre",
+            "fontWeight": 100,
+            "fontFamily": "",
+            "fontSize": 32
+        },
+        "order": 1
+    },
+    "focus": false,
+    "version": 3
+}
