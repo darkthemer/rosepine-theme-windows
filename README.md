@@ -23,6 +23,7 @@
 ![desktop0](__screenshots/desktop.png)
 ![desktop1](__screenshots/desktop1.png)
 ![desktop2](__screenshots/desktop2.png)
+![desktop2](__screenshots/desktop3.png)
 
 ### caprine
 

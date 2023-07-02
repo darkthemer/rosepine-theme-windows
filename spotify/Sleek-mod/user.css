@@ -868,9 +868,6 @@ body::after {
     border: 3px solid transparent !important;
     border-radius: 6px;
 }
-.main-trackList-trackListRow {
-    margin: 6px;
-}
 .main-trackList-trackListRow:focus-within,
 .main-trackList-trackListRow:hover,
 .main-trackList-trackListRow.main-trackList-selected,
