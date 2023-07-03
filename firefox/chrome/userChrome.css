@@ -82,6 +82,23 @@
     text-align: center !important;
 }
 
+/* prevent url bar from clipping */
+#urlbar-container {
+    width: fit-content !important;
+}
+
+/* show extension button on hover */
+#unified-extensions-button:hover .toolbarbutton-icon,
+#unified-extensions-button[open="true"] .toolbarbutton-icon {
+    width: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
+    padding: var(--toolbarbutton-inner-padding) !important;
+}
+#unified-extensions-button .toolbarbutton-icon {
+    width: 0 !important;
+    padding: 1px !important;
+    transition: all 0.2s ease !important;
+}
+
 /* url bar colors */
 .urlbarView-row[selected],
 .urlbarView-row[row-selectable]:not([selected]):hover {
@@ -210,29 +227,38 @@
         --organizer-focus-selected-color: var(--uc-accent-colour) !important;
     }
     treechildren,
-    richlistbox, richlistitem {
+    richlistbox,
+    richlistitem {
         border: 2px solid transparent !important;
         border-radius: 6px !important;
         padding: 4px !important;
         border-radius: 2px !important;
     }
-    treechildren::-moz-tree-row(selected), richlistbox:where(:focus) > richlistitem[selected="true"], richlistitem[selected="true"] {
+    treechildren::-moz-tree-row(selected),
+    richlistbox:where(:focus) > richlistitem[selected="true"],
+    richlistitem[selected="true"] {
         background-color: var(--organizer-selected-background) !important;
         border-radius: 6px !important;
     }
-    treechildren::-moz-tree-row(selected):hover, richlistbox:where(:focus) > richlistitem[selected="true"]:hover, richlistitem[selected="true"]:hover {
+    treechildren::-moz-tree-row(selected):hover,
+    richlistbox:where(:focus) > richlistitem[selected="true"]:hover,
+    richlistitem[selected="true"]:hover {
         background-color: var(--organizer-selected-background) !important;
         border-radius: 6px !important;
     }
-    treechildren::-moz-tree-row(hover), richlistitem:hover {
+    treechildren::-moz-tree-row(hover),
+    richlistitem:hover {
         background-color: var(--organizer-hover-background) !important;
         border: 2px solid var(--organizer-focus-selected-color) !important;
         border-radius: 6px !important;
     }
-    treechildren::-moz-tree-cell-text(selected), richlistbox:where(:focus) > richlistitem[selected="true"], richlistitem[selected="true"] {
+    treechildren::-moz-tree-cell-text(selected),
+    richlistbox:where(:focus) > richlistitem[selected="true"],
+    richlistitem[selected="true"] {
         color: var(--organizer-focus-selected-color) !important;
     }
-    treechildren::-moz-tree-cell-text(hover), richlistitem:hover {
+    treechildren::-moz-tree-cell-text(hover),
+    richlistitem:hover {
         color: var(--organizer-focus-selected-color) !important;
     }
     #placesView > splitter {
