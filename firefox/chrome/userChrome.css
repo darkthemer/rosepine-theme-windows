@@ -38,7 +38,7 @@
 
 :root {
     --uc-popup-border-colour: rgb(110, 106, 134);
-    --uc-seperator-colour: rgb(38, 35, 58);
+    --uc-seperator-colour: rgb(57, 53, 82);
 
     /* popup panels */
     --arrowpanel-background: var(--uc-base-colour) !important;
@@ -261,6 +261,12 @@
     richlistitem:hover {
         color: var(--organizer-focus-selected-color) !important;
     }
+    #downloadsListBox:focus > richlistitem[selected] {
+        background-image: none !important;
+        background-clip: unset !important;
+        border: 2px solid var(--organizer-focus-selected-color) !important;
+        outline: none !important;
+    }
     #placesView > splitter {
         border-inline-end: none !important;
     }
@@ -285,12 +291,15 @@
     #placesView {
         border-top: 0px solid var(--organizer-border-color) !important;
     }
-    #placesToolbar,
+    #placesToolbar {
+        border-bottom: 0 !important;
+    }
+    /* #placesToolbar,
     #placesToolbox,
     #places {
         background-color: transparent !important;
         -moz-appearance: -moz-win-borderless-glass !important;
-    }
+    } */
     #searchFilter {
         background-color: transparent !important;
     }
@@ -305,80 +314,114 @@
     }
 }
 
-/* thanks to https://github.com/KibSquib48/MicaFox */
 #main-window {
-    background-color: transparent !important;
-    -moz-appearance: -moz-win-borderless-glass !important;
+    background-color: var(--uc-base-colour) !important;
+    /* -moz-appearance: -moz-win-borderless-glass !important; */
 }
 #navigator-toolbox {
     background: transparent !important;
 }
-#TabsToolbar {
-    background-image: none !important; /* Windows 7 */
-}
-/* fix duplicate title bar buttons */
-.titlebar-buttonbox-container {
-    display: block;
-}
+
+/* titlebar buttons */
 .titlebar-buttonbox {
-    height: 30px;
+    height: 26px;
 }
-.titlebar-button,
-.titlebar-close,
-.titlebar-button:hover,
-.titlebar-close:hover {
-    list-style-image: none !important;
-    background-color: transparent !important;
+.titlebar-button {
+    --uc-caption-color: rgb(156, 207, 216);
+    --uc-caption-color-hover: rgb(156, 207, 216, .3);
+}
+.titlebar-min {
+    --uc-caption-color: rgb(246, 193, 119);
+    --uc-caption-color-hover: rgba(246, 193, 119, .3);
+}
+.titlebar-close {
+    --uc-caption-color: rgb(235, 188, 186);
+    --uc-caption-color-hover: rgba(235, 188, 186, .3);
+}
+.titlebar-button:hover:before {
+    font-family: 'Segoe Fluent Icons' !important;
+    font-weight: bold;
+    font-size: 6px;
+    -webkit-text-stroke: 2px;
+}
+.titlebar-button:hover:before {
+    color: var(--uc-caption-color, currentColor);
+    content: '\ea3a';
+    position: absolute;
+}
+.titlebar-min:hover:before {
+    content: '\f7af';
+    position: absolute;
+}
+.titlebar-close:hover:before {
+    content: '\e711';
+    position: absolute;
+}
+.titlebar-button:hover > .toolbarbutton-icon {
+    background: var(--uc-caption-color-hover, currentColor) !important;
+    outline: 2px solid var(--uc-caption-color, currentColor);
+    outline-offset: -1px;
+}
+.titlebar-button {
+    background: transparent !important;
+    padding-inline: 17px !important;
+}
+.titlebar-close {
+    padding-right: 14px !important;
+}
+.titlebar-button > .toolbarbutton-icon {
+    list-style-image: none;
+    border-radius: 100%;
+    background: var(--uc-caption-color, currentColor) !important;
+    scale: 1.1;
 }
 
 /* context menu */
-@media (-moz-windows-non-native-menus) {
-    menupopup {
-        --panel-border-radius: 6px !important;
-        --panel-padding: 6px 3px !important;
-        --panel-border-color: var(--uc-popup-border-colour) !important;
-        --panel-background: var(--uc-base-colour) !important;
-        --nested-margin: -10px !important;
-    }
-    menupopup,
-    panel {
-        --panel-color: var(--uc-inverted-colour) !important;
-        --panel-shadow: 0 6px var(--panel-shadow-margin) hsla(0, 0%, 0%, 0.2) !important;
-        --panel-shadow-margin: 10px !important;
-    }
-    menuseparator {
-        border-top: 1px solid var(--uc-seperator-colour) !important;
-    }
-    menu:where([_moz-menuactive="true"]:not([disabled="true"])),
-    menuitem:where([_moz-menuactive="true"]:not([disabled="true"])) {
-        background-color: var(--uc-highlight-colour) !important;
-        color: var(--uc-inverted-colour) !important;
-        border-radius: 3px;
-    }
-    menu:where([disabled="true"]),
-    menuitem:where([disabled="true"]),
-    menu:where([_moz-menuactive="true"][disabled="true"]),
-    menuitem:where([_moz-menuactive="true"][disabled="true"]) {
-        color: var(--uc-muted-colour) !important;
-    }
-    menu,
-    menuitem,
-    menucaption {
-        appearance: none !important;
-    }
-    #context-navigation
-        > .menuitem-iconic[_moz-menuactive="true"]
-        > .menu-iconic-left
-        > .menu-iconic-icon,
-    #context-navigation
-        > .menuitem-iconic[_moz-menuactive="true"][disabled="true"]
-        > .menu-iconic-left
-        > .menu-iconic-icon {
-        background-color: transparent !important;
-    }
-    menu:where([_moz-menuactive="true"][disabled="true"]),
-    menuitem:where([_moz-menuactive="true"][disabled="true"]) {
-        background-color: var(--uc-base-colour) !important;
-        border-radius: 3px;
-    }
+menupopup {
+    --panel-border-radius: 6px !important;
+    --panel-padding: 6px 3px !important;
+    --panel-border-color: var(--uc-popup-border-colour) !important;
+    --panel-background: var(--uc-base-colour) !important;
+    --nested-margin: -10px !important;
+}
+menupopup,
+panel {
+    --panel-color: var(--uc-inverted-colour) !important;
+    --panel-shadow: 0 6px var(--panel-shadow-margin) hsla(0, 0%, 0%, 0.2) !important;
+    --panel-shadow-margin: 10px !important;
+}
+menuseparator::before {
+    border-top: 1px solid var(--uc-seperator-colour) !important;
+}
+menu:where([_moz-menuactive="true"]:not([disabled="true"])),
+menuitem:where([_moz-menuactive="true"]:not([disabled="true"])) {
+    background-color: var(--uc-highlight-colour) !important;
+    color: var(--uc-inverted-colour) !important;
+    border-radius: 3px;
+}
+menu:where([disabled="true"]),
+menuitem:where([disabled="true"]),
+menu:where([_moz-menuactive="true"][disabled="true"]),
+menuitem:where([_moz-menuactive="true"][disabled="true"]) {
+    color: var(--uc-muted-colour) !important;
+}
+menu,
+menuitem,
+menucaption {
+    appearance: none !important;
+}
+#context-navigation
+    > .menuitem-iconic[_moz-menuactive="true"]
+    > .menu-iconic-left
+    > .menu-iconic-icon,
+#context-navigation
+    > .menuitem-iconic[_moz-menuactive="true"][disabled="true"]
+    > .menu-iconic-left
+    > .menu-iconic-icon {
+    background-color: transparent !important;
+}
+menu:where([_moz-menuactive="true"][disabled="true"]),
+menuitem:where([_moz-menuactive="true"][disabled="true"]) {
+    background-color: var(--uc-base-colour) !important;
+    border-radius: 3px;
 }
