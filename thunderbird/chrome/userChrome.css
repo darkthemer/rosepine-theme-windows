@@ -152,31 +152,63 @@ treecolpicker {
     border: none;
 }
 
-#main-window,
-#mail-toolbox {
-    /* aero/mica window transparency */
-    background-color: transparent !important;
-    -moz-appearance: -moz-win-glass !important;
+/* titlebar buttons */
+.titlebar-buttonbox-container {
+    -moz-box-align: baseline !important;
 }
-
-toolbar#nav-bar {
-    /* aero/mica window transparency */
-    background: none !important;
+.titlebar-buttonbox {
+    height: 32px;
 }
-
-#navigation-toolbox:-moz-lwtheme,
-#ab-toolbox:-moz-lwtheme,
-#compose-toolbox:-moz-lwtheme {
-    /* aero/mica window transparency */
-    --lwt-accent-color: transparent !important;
+.titlebar-button {
+    --uc-caption-color: rgb(156, 207, 216);
+    --uc-caption-color-hover: rgb(156, 207, 216, 0.3);
 }
-
-/* .tabmail-tab .tab-background[selected="true"]:-moz-lwtheme {
-    background-image: linear-gradient(
-        rgba(224, 222, 244, 0.1),
-        rgba(224, 222, 244, 0.1)
-    ) !important;
-} */
+.titlebar-min {
+    --uc-caption-color: rgb(246, 193, 119);
+    --uc-caption-color-hover: rgba(246, 193, 119, 0.3);
+}
+.titlebar-close {
+    --uc-caption-color: rgb(235, 188, 186);
+    --uc-caption-color-hover: rgba(235, 188, 186, 0.3);
+}
+.titlebar-button:hover:before {
+    font-family: "Segoe Fluent Icons" !important;
+    font-weight: bold;
+    font-size: 6px;
+    -webkit-text-stroke: 2px;
+    transform: translate(3px, -4px);
+}
+.titlebar-button:hover:before {
+    color: var(--uc-caption-color, currentColor);
+    content: "\ea3a";
+    position: absolute;
+}
+.titlebar-min:hover:before {
+    content: "\f7af";
+    position: absolute;
+}
+.titlebar-close:hover:before {
+    content: "\e711";
+    position: absolute;
+}
+.titlebar-button:hover > .toolbarbutton-icon {
+    background: var(--uc-caption-color-hover, currentColor) !important;
+    outline: 2px solid var(--uc-caption-color, currentColor);
+    outline-offset: -1px;
+}
+.titlebar-button {
+    background: transparent !important;
+    padding-inline: 17px !important;
+}
+.titlebar-close {
+    padding-right: 16px !important;
+}
+.titlebar-button > .toolbarbutton-icon {
+    list-style-image: none;
+    border-radius: 100%;
+    background: var(--uc-caption-color, currentColor) !important;
+    scale: 1.1;
+}
 
 .gloda-search:-moz-lwtheme,
 .remote-gloda-search:-moz-lwtheme,
@@ -216,7 +248,7 @@ treechildren::-moz-tree-row(selected) {
     border-radius: 6px !important;
 }
 treechildren::-moz-tree-row(hover) {
-    background-color: var( --toolbar-field-focus-border-color) !important;
+    background-color: var(--toolbar-field-focus-border-color) !important;
     border: 2px solid var(--accent-color) !important;
     border-radius: 6px !important;
 }
@@ -227,7 +259,8 @@ treechildren::-moz-tree-cell-text(hover) {
     color: var(--accent-color) !important;
 }
 
-:root:-moz-lwtheme treecol:hover, :root:-moz-lwtheme treecolpicker:hover {
+:root:-moz-lwtheme treecol:hover,
+:root:-moz-lwtheme treecolpicker:hover {
     background-color: var(--lwt-toolbar-field-highlight) !important;
     border-radius: 0 0 6px 6px;
 }
