@@ -39,6 +39,7 @@
 :root {
     --uc-popup-border-colour: rgb(110, 106, 134);
     --uc-seperator-colour: rgb(57, 53, 82);
+    --uc-tab-colour: rgb(33, 32, 46);
 
     /* popup panels */
     --arrowpanel-background: var(--uc-base-colour) !important;
@@ -61,6 +62,17 @@
     --button-active-bgcolor: var(--uc-muted-colour) !important;
     --toolbarbutton-icon-fill: var(--uc-muted-colour) !important;
     --urlbar-box-active-bgcolor: var(--uc-accent-colour) !important;
+}
+
+/* remove flashbang */
+body,
+html,
+.browserContainer,
+#mainPopupSet,
+#main-window,
+#tabbrowser-tabbox,
+#tabbrowser-tabpanels {
+    background-color: var(--uc-base-colour) !important;
 }
 
 /* move menubar to left-most - cascade fix */
@@ -107,6 +119,14 @@
 #urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner,
 .urlbarView:not([noresults]) > .search-one-offs:not([hidden]) {
     border-top: 1px solid var(--uc-seperator-colour) !important;
+}
+
+/* active tab color fix */
+.tab-background:is([selected], [multiselected]) {
+    background-color: var(--uc-tab-colour) !important;
+}
+.tabbrowser-tab:where([visuallyselected]) .tab-text.tab-label {
+    color: var(--uc-inverted-colour) !important;
 }
 
 /* inactive tabs */
@@ -328,33 +348,33 @@
 }
 .titlebar-button {
     --uc-caption-color: rgb(156, 207, 216);
-    --uc-caption-color-hover: rgb(156, 207, 216, .3);
+    --uc-caption-color-hover: rgb(156, 207, 216, 0.3);
 }
 .titlebar-min {
     --uc-caption-color: rgb(246, 193, 119);
-    --uc-caption-color-hover: rgba(246, 193, 119, .3);
+    --uc-caption-color-hover: rgba(246, 193, 119, 0.3);
 }
 .titlebar-close {
     --uc-caption-color: rgb(235, 188, 186);
-    --uc-caption-color-hover: rgba(235, 188, 186, .3);
+    --uc-caption-color-hover: rgba(235, 188, 186, 0.3);
 }
 .titlebar-button:hover:before {
-    font-family: 'Segoe Fluent Icons' !important;
+    font-family: "Segoe Fluent Icons" !important;
     font-weight: bold;
     font-size: 6px;
     -webkit-text-stroke: 2px;
 }
 .titlebar-button:hover:before {
     color: var(--uc-caption-color, currentColor);
-    content: '\ea3a';
+    content: "\ea3a";
     position: absolute;
 }
 .titlebar-min:hover:before {
-    content: '\f7af';
+    content: "\f7af";
     position: absolute;
 }
 .titlebar-close:hover:before {
-    content: '\e711';
+    content: "\e711";
     position: absolute;
 }
 .titlebar-button:hover > .toolbarbutton-icon {

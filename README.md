@@ -27,48 +27,56 @@
 
 ### caprine
 
-![desktop](__screenshots/caprine.png)
+![](__screenshots/caprine.png)
 
 ### discord
 
-![desktop](__screenshots/discord.png)
+![](__screenshots/discord.png)
 
 ### explorer
 
-![desktop](__screenshots/explorer.png)
+![](__screenshots/explorer.png)
 
 ### firefox
 
-![desktop](__screenshots/firefox.png)
+![](__screenshots/firefox.png)
 
-### flowlauncher
+### flowLauncher
 
-![desktop](__screenshots/flowlauncher.png)
+![](__screenshots/flowlauncher.png)
 
 ### nomacs
 
-![desktop](__screenshots/nomacs.png)
+![](__screenshots/nomacs.png)
 
 ### obsidian
 
-![desktop](__screenshots/obsidian.png)
+![](__screenshots/obsidian.png)
 
 ### playnite
 
-![desktop](__screenshots/playnite.png)
+![](__screenshots/playnite.png)
+
+### speedCrunch
+
+![](__screenshots/speedcrunch.png)
 
 ### spotify
 
-![desktop](__screenshots/spotify.png)
+![](__screenshots/spotify.png)
 
 ### sumatrapdf
 
-![desktop](__screenshots/sumatrapdf.png)
+![](__screenshots/sumatrapdf.png)
 
 ### thunderbird
 
-![desktop](__screenshots/thunderbird.png)
+![](__screenshots/thunderbird.png)
 
 ### vscodium
 
-![desktop](__screenshots/vscodium.png)
+![](__screenshots/vscodium.png)
+
+### windowsTerminal
+
+![](__screenshots/windowsterminal.png)

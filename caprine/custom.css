@@ -33,13 +33,15 @@ Press Command/Ctrl+R in Caprine to see your changes.
 }
 
 /* colors */
-.__fb-dark-mode {
+.__fb-dark-mode,
+.__fb-light-mode {
     --card-background: #191724 !important /* menu */;
     --messenger-card-background: #191724 !important; /* main */
     --surface-background: #191724 !important; /* sidebar */
-    --hosted-view-selected-state: #1f1d2e !important; /* selected color */
-    --wash: #26233a !important; /* chat bubble */
-    --comment-footer-background: #1f1d2e !important; /* reply bubble */
+    --pressable-background-color-selected: #1f1d2e !important; /* selected color */
+    --pressable-background-color-hover: rgba(0, 0, 0, 0.1) !important; /* hovered color */
+    --chat-incoming-message-bubble-background-color: #26233a !important; /* chat bubble */
+    --chat-replied-message-background-color: #1f1d2e !important; /* reply bubble */
     --comment-background: #1f1d2e !important; /* chat box */
     --always-black: #908caa !important; /* black icon fix */
     --divider: transparent !important;
