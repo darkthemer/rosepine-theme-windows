@@ -45,6 +45,10 @@
 
 ![](__screenshots/flowlauncher.png)
 
+### mpc-hc
+
+![](__screenshots/mpc-hc.png)
+
 ### nomacs
 
 ![](__screenshots/nomacs.png)
@@ -57,7 +61,7 @@
 
 ![](__screenshots/playnite.png)
 
-### speedCrunch
+### speedcrunch
 
 ![](__screenshots/speedcrunch.png)
 
