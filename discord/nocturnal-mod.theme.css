@@ -7,6 +7,11 @@
 * @source https://github.com/xcruxiex/themes
 * @website https://betterdiscord.app/theme/Nocturnal
 */
+
+/*
+* very handy tool https://syndishanx.github.io/Website/Update_Classes.html
+*/
+
 @import url("https://xcruxiex.github.io/themes/themes-cores/nocturnal.css");
 
 @import url("https://xcruxiex.github.io/themes/core/badges.css");
@@ -94,18 +99,18 @@ div[class*="titleBar-"] {
 }
 
 /* dividers instead of folder icons + expanded folders background removal */
-.expandedFolderIconWrapper-3RwQpD {
+.expandedFolderIconWrapper__458cf {
     transform: scale(0.1, 2);
 }
-#app-mount .expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi) {
+#app-mount .guilds__2b93a [class*=expandedFolderBackground] {
     background: transparent !important;
 }
 
 /* server icon badges adjustment */
-.lowerBadge-3j0ZAg {
+.lowerBadge__669e7 {
     transform: translate(5px, 2px) !important;
 }
-.base-3IDx3L {
+.base__92a12 {
     min-width: calc(var(--HSL-server-icon-size) / 2) !important;
     min-height: calc(var(--HSL-server-icon-size) / 2) !important;
     line-height: calc(var(--HSL-server-icon-size) / 2) !important;
@@ -113,30 +118,30 @@ div[class*="titleBar-"] {
     width: unset !important;
     height: unset;
 }
-.upperBadge-1d6YsW {
+.upperBadge_c7cfb3 {
     transform: translate(5px, -2px) !important;
 }
-.iconBadge-1D5-9X {
+.iconBadge__2abac {
     width: unset !important;
 }
-.upperBadge-1d6YsW svg.icon-2Ug6UV {
+.upperBadge_c7cfb3 svg.icon__92653 {
     width: calc(var(--HSL-server-icon-size) / 3) !important;
     height: calc(var(--HSL-server-icon-size) / 3) !important;
 }
 
 /* custom active server pill */
-#app-mount .guilds-2JjMmN [class*="pill"] {
+#app-mount .guilds__2b93a [class*=pill] {
     top: calc(var(--server-size) / -2 + var(--server-size) + 8px) !important;
 }
-.item-2LIpTv {
+.item_f9d377 {
     background-color: var(--mainColor);
 }
-#app-mount .guilds-2JjMmN [class*="pill"] span {
+#app-mount .guilds__2b93a [class*=pill] span {
     width: 2px !important;
 }
 
 /* top bar removal + hoverable channel description and search bar */
-#app-mount .container-ZMc96U.themed-Hp1KC_ {
+#app-mount .container__11d72.themed_b152d4 {
     background: unset !important;
     background-image: linear-gradient(
         var(--backgroundColor02) 30%,
@@ -144,104 +149,104 @@ div[class*="titleBar-"] {
         transparent
     ) !important;
 }
-.container-ZMc96U {
+.container__11d72 {
     position: absolute !important;
 }
-.children-3xh0VB > *:not(.topic-11NuQZ.expandable-3CaLeS, .topPill-2vcLsa) {
+.children__32014 > *:not(.topic__16ae3.expandable_ddf73d, .topPill__0cdf1) {
     display: none;
 }
-.topic-11NuQZ.expandable-3CaLeS,
-.topPill-2vcLsa,
-.search-2Mwzzq {
+.topic__16ae3.expandable_ddf73d,
+.topPill__0cdf1,
+.search_ac353c {
     opacity: 0;
     transition: opacity 0.2s;
 }
-.toolbar-3_r2xA > *:not(.search-39IXmY) {
+.toolbar__88c63 > *:not(.search__07df0) {
     visibility: hidden;
     width: 0;
     margin: 0;
 }
-.topic-11NuQZ.expandable-3CaLeS:hover,
-.topPill-2vcLsa:hover,
-.search-2Mwzzq.open-1F8u2c {
+.topic__16ae3.expandable_ddf73d:hover,
+.topPill__0cdf1:hover,
+.search_ac353c.open_d3ab4e {
     opacity: 1;
 }
-.searchBar-jGtisZ,
-.resizeHandle-PBRzPC {
+.searchBar_e0c60b,
+.resizeHandle_f1a098 {
     background: transparent;
 }
 
 /* custom unread bar + clickable elements adjustment */
-#app-mount .newMessagesBar-1hF-9G,
-.barButtonBase-Sk2mdB {
+#app-mount .newMessagesBar__8b6d7,
+.barButtonBase__8fa46 {
     background-color: var(--backgroundColor03);
     color: var(--mainColor);
 }
-.newMessagesBar-1hF-9G.barBase-3xxDXu {
+.newMessagesBar__8b6d7.barBase__4e0ba {
     padding-top: 40px;
 }
-.tabBody-2dgbAs,
-.searchResultsWrap-5RVOkx {
+.tabBody_b3d268,
+.searchResultsWrap__9f374 {
     margin-top: 40px;
 }
 
 /* cleaner floating boxes, cards */
-#app-mount .emptyCard-KDifrB .inset-SbsSFp,
-#app-mount .emptyCard-KDifrB .section-3G9aLW,
-#app-mount .wrapper-2RrXDg .inset-SbsSFp,
-#app-mount .wrapper-2RrXDg .section-3G9aLW {
+#app-mount .emptyCard_f82dde .inset__0bfb3,
+#app-mount .emptyCard_f82dde .section_efc22d,
+#app-mount .wrapper__6e669 .inset__0bfb3,
+#app-mount .wrapper__6e669 .section_efc22d {
     box-shadow: none;
 }
 
 /* consistent avatar corner rounding */
-.avatar-2e8lTP,
-.avatar-3FKimL {
+.avatar__08316,
+.avatar_a56eee {
     border-radius: var(--rs-avatar-shape);
 }
-.svg-lIB-lq.avatarHint-k7pYop foreignObject {
+.svg__7900e.avatarHint__8e5b9 foreignObject {
     mask: none !important;
 }
-.avatarHintInner-2HUAWj {
+.avatarHintInner__3d1c9 {
     border-radius: var(--rs-avatar-shape);
     transform: scale(0.9);
 }
 
 /* better readability of user mentions */
-#app-mount .wrapper-1ZcZW- {
+#app-mount .wrapper__2d9b1 {
     color: var(--backgroundColor02);
     text-shadow: none;
 }
 
 /* custom unread divider */
-.isUnread-3Lojb- .content-3spvdd {
+.isUnread__6f880 .content_d67847 {
     border: 1px solid var(--divider-color);
 }
-.unreadPill-3nEWYM {
+.unreadPill__715fc {
     color: var(--backgroundColor02);
 }
 
 /* message input field with borders + lesser buttons + consistent emoji picker colors */
-.channelTextArea-1FufC0.channelTextArea-1VQBuV {
+.channelTextArea__2e60f.channelTextArea__56a36 {
     border: 3px solid var(--backgroundColor04) !important;
 }
-.channelTextArea-1FufC0.channelTextArea-1VQBuV:hover {
+.channelTextArea__2e60f.channelTextArea__56a36:hover {
     border: 3px solid var(--mainColor) !important;
 }
-.channelTextArea-1FufC0.channelTextArea-1VQBuV:focus-within {
+.channelTextArea__2e60f.channelTextArea__56a36:focus-within {
     border: 3px solid var(--backgroundColor03) !important;
 }
-.buttons-uaqb-5 > *:not(:last-child) {
+.buttons_ce5b56 > *:not(:last-child) {
     display: none;
 }
-.sprite-2lxwfc {
+.sprite__294b3 {
     filter: sepia(1) brightness(0.8) hue-rotate(300deg) !important;
 }
-.inner-NQg18Y > div:nth-child(2) {
+.inner__9fd0b > div:nth-child(2) {
     order: 2;
 }
-.inner-NQg18Y > div:nth-child(3) {
+.inner__9fd0b > div:nth-child(3) {
     order: 1;
 }
-.inner-NQg18Y > div:nth-child(4) {
+.inner__9fd0b > div:nth-child(4) {
     order: 3;
 }
