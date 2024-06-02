@@ -148,7 +148,7 @@
     "showTabsInTitlebar": false,
     "showTerminalTitleInTitlebar": false,
     "tabSwitcherMode": "inOrder",
-    "tabWidthMode": "equal",
+    "tabWidthMode": "compact",
     "theme": "rose-pine",
     "themes": 
     [
@@ -156,7 +156,7 @@
             "name": "rose-pine",
             "tab": 
             {
-                "background": "#21202EFF",
+                "background": "#191724FF",
                 "showCloseButton": "activeOnly",
                 "unfocusedBackground": null
             },
