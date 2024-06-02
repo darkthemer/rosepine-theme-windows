@@ -1,155 +1,385 @@
+:host,
 :root {
-    --accent-color: #ebbcba;
-    --accent-color-dim: #584850;
+    --color-red-10: #eb6f92 !important;
+    --color-red-20: #eb6f92 !important;
+    --color-red-30: #eb6f92 !important;
+    --color-red-40: #eb6f92 !important;
+    --color-red-50: #eb6f92 !important;
+    --color-red-60: #eb6f92 !important;
+    --color-red-70: #b4637a !important;
+    --color-red-80: #b4637a !important;
+    --color-red-90: #b4637a !important;
+    --color-orange-10: #ebbcba !important;
+    --color-orange-20: #ebbcba !important;
+    --color-orange-30: #ebbcba !important;
+    --color-orange-40: #ea9a97 !important;
+    --color-orange-50: #ea9a97 !important;
+    --color-orange-60: #ea9a97 !important;
+    --color-orange-70: #d7827e !important;
+    --color-orange-80: #d7827e !important;
+    --color-orange-90: #d7827e !important;
+    --color-amber-10: #f6c177 !important;
+    --color-amber-20: #f6c177 !important;
+    --color-amber-30: #f6c177 !important;
+    --color-amber-40: #f6c177 !important;
+    --color-amber-50: #f6c177 !important;
+    --color-amber-60: #f6c177 !important;
+    --color-amber-70: #ea9d34 !important;
+    --color-amber-80: #ea9d34 !important;
+    --color-amber-90: #ea9d34 !important;
+    --color-yellow-10: #f6c177 !important;
+    --color-yellow-20: #f6c177 !important;
+    --color-yellow-30: #f6c177 !important;
+    --color-yellow-40: #f6c177 !important;
+    --color-yellow-50: #f6c177 !important;
+    --color-yellow-60: #f6c177 !important;
+    --color-yellow-70: #ea9d34 !important;
+    --color-yellow-80: #ea9d34 !important;
+    --color-yellow-90: #ea9d34 !important;
+    --color-green-10: #9ccfd8 !important;
+    --color-green-20: #9ccfd8 !important;
+    --color-green-30: #9ccfd8 !important;
+    --color-green-40: #9ccfd8 !important;
+    --color-green-50: #9ccfd8 !important;
+    --color-green-60: #9ccfd8 !important;
+    --color-green-70: #56949f !important;
+    --color-green-80: #56949f !important;
+    --color-green-90: #56949f !important;
+    --color-teal-10: #9ccfd8 !important;
+    --color-teal-20: #9ccfd8 !important;
+    --color-teal-30: #9ccfd8 !important;
+    --color-teal-40: #9ccfd8 !important;
+    --color-teal-50: #9ccfd8 !important;
+    --color-teal-60: #9ccfd8 !important;
+    --color-teal-70: #56949f !important;
+    --color-teal-80: #56949f !important;
+    --color-teal-90: #56949f !important;
+    --color-blue-05: #3e8fb0 !important;
+    --color-blue-10: #3e8fb0 !important;
+    --color-blue-20: #3e8fb0 !important;
+    --color-blue-30: #31748f !important;
+    --color-blue-40: #31748f !important;
+    --color-blue-50: #31748f !important;
+    --color-blue-60: #31748f !important;
+    --color-blue-70: #286983 !important;
+    --color-blue-80: #286983 !important;
+    --color-blue-90: #286983 !important;
+    --color-purple-10: #c4a7e7 !important;
+    --color-purple-20: #c4a7e7 !important;
+    --color-purple-30: #c4a7e7 !important;
+    --color-purple-40: #c4a7e7 !important;
+    --color-purple-50: #c4a7e7 !important;
+    --color-purple-60: #c4a7e7 !important;
+    --color-purple-70: #907aa9 !important;
+    --color-purple-80: #907aa9 !important;
+    --color-purple-90: #907aa9 !important;
+    --color-magenta-10: #eb6f92 !important;
+    --color-magenta-20: #eb6f92 !important;
+    --color-magenta-30: #eb6f92 !important;
+    --color-magenta-40: #eb6f92 !important;
+    --color-magenta-50: #eb6f92 !important;
+    --color-magenta-60: #eb6f92 !important;
+    --color-magenta-70: #b4637a !important;
+    --color-magenta-80: #b4637a !important;
+    --color-magenta-90: #b4637a !important;
+    --color-brown-10: #ea9a97 !important;
+    --color-brown-20: #ea9a97 !important;
+    --color-brown-30: #ea9a97 !important;
+    --color-brown-40: #ea9a97 !important;
+    --color-brown-50: #ea9a97 !important;
+    --color-brown-60: #ea9a97 !important;
+    --color-brown-70: #d7827e !important;
+    --color-brown-80: #d7827e !important;
+    --color-brown-90: #d7827e !important;
+    --color-gray-05: #e0def4 !important;
+    --color-gray-10: #e0def4 !important;
+    --color-gray-20: #908caa !important;
+    --color-gray-30: #908caa !important;
+    --color-gray-40: #6e6a86 !important;
+    --color-gray-50: #6e6a86 !important;
+    --color-gray-60: #1f1d2e !important;
+    --color-gray-70: #1f1d2e !important;
+    --color-gray-80: #191724 !important;
+    --color-gray-90: #191724 !important;
+    --color-ink-10: #e0def4 !important;
+    --color-ink-20: #908caa !important;
+    --color-ink-30: #908caa !important;
+    --color-ink-40: #6e6a86 !important;
+    --color-ink-50: #6e6a86 !important;
+    --color-ink-60: #1f1d2e !important;
+    --color-ink-70: #1f1d2e !important;
+    --color-ink-80: #191724 !important;
+    --color-ink-90: #191724 !important;
+    --color-white: #e0def4 !important;
+    --color-black: #191724 !important;
 
+    --layout-background-0: var(--color-gray-80) !important;
+    --layout-background-1: var(--color-gray-80) !important;
+    --layout-background-2: var(--color-gray-80) !important;
+    --layout-background-3: var(--color-gray-70) !important;
+    --layout-background-4: var(--color-gray-70) !important;
+    --layout-color-0: var(--color-white) !important;
+    --layout-color-1: var(--color-gray-10) !important;
+    --layout-color-2: var(--color-gray-30) !important;
+    --layout-color-3: var(--color-gray-50) !important;
+    --layout-border-0: var(--color-gray-70) !important;
+    --layout-border-1: var(--color-gray-50) !important;
+    --layout-border-2: var(--color-gray-50) !important;
+}
+
+:root {
+    /* unified toolbar */
     --lwt-accent-color: rgb(25, 23, 36) !important;
-    --lwt-text-color: rgba(224, 222, 244) !important;
+    --lwt-text-color: rgb(224, 222, 244) !important;
+    --dark-lwt-highlight-color: var() !important;
+
+    /* spaces */
+    --spaces-bg-color: #191724 !important;
+    --spaces-button-text-color: #908caa !important;
+    --spaces-button-active-text-color: #191724 !important;
+    --spaces-button-active-bg-color: #ebbcba !important;
+    --spaces-border-color: transparent !important;
+    --spaces-bg-image: none !important;
+
+    /* context menu */
     --arrowpanel-background: rgb(25, 23, 36) !important;
-    --panel-disabled-color: rgba(144, 140, 170, 0.5) !important;
-    --panel-description-color: rgba(144, 140, 170, 0.7) !important;
-    --arrowpanel-color: rgba(144, 140, 170, 1) !important;
+    --arrowpanel-color: rgb(251, 251, 254) !important;
     --arrowpanel-border-color: rgb(110, 106, 134) !important;
+    --arrowpanel-dimmed: rgb(38, 35, 58) !important;
+    --arrowpanel-dimmed-further: rgb(38, 35, 58) !important;
+    --panel-item-hover-bgcolor: rgb(38, 35, 58) !important;
+    --panel-item-active-bgcolor: rgb(38, 35, 58) !important;
+    --panel-separator-color: rgba(57, 53, 82) !important;
+    --panel-disabled-color: rgb(31, 29, 46) !important;
+
+    --arrowpanel-border-radius: 8px;
+    --arrowpanel-padding: 16px;
+
+    /* toolbar field */
     --toolbar-field-background-color: rgb(25, 23, 36) !important;
     --toolbar-field-color: rgb(224, 222, 244) !important;
     --toolbar-field-border-color: rgba(0, 0, 0, 0) !important;
-    --toolbar-field-focus-background-color: rgba(38, 35, 58, 1) !important;
+    --toolbar-field-focus-background-color: rgba(31, 29, 46) !important;
     --toolbar-field-focus-color: rgb(224, 222, 244) !important;
     --toolbar-field-focus-border-color: rgb(38, 35, 58) !important;
-    --lwt-toolbar-field-highlight: rgba(38, 35, 58, 1) !important;
-    --lwt-toolbar-field-highlight-text: rgb(224, 222, 244) !important;
-    --toolbar-field-highlight: rgba(235, 188, 186) !important;
-    --toolbar-field-highlight-color: rgb(25, 23, 36) !important;
-    --tab-loading-fill: rgb(38, 35, 58) !important;
-    --lwt-tab-text: rgb(144, 140, 170) !important;
-    --lwt-tab-line-color: rgba(0, 0, 0, 0) !important;
-    --lwt-background-tab-separator-color: rgba(0, 0, 0, 0) !important;
+
+    /* toolbar */
     --toolbar-bgcolor: rgb(25, 23, 36) !important;
-    --toolbar-color: rgb(144, 140, 170) !important;
-    --lwt-tabs-border-color: rgba(0, 0, 0, 0) !important;
-    --toolbarseparator-color: rgb(57, 53, 82) !important;
+    --toolbar-color: rgb(224, 222, 244) !important;
     --chrome-content-separator-color: rgb(57, 53, 82) !important;
-    --lwt-selected-tab-background-color: rgb(31, 29, 46) !important;
-    --autocomplete-popup-highlight-background: rgb(31, 29, 46) !important;
-    --autocomplete-popup-highlight-color: rgb(224, 222, 244) !important;
+    --toolbarbutton-icon-fill: rgb(224, 222, 244) !important;
+    --toolbarseparator-color: color-mix(in srgb, currentColor 20%, transparent);
+
+    /* toolbar button */
+    --toolbarbutton-hover-background: var(
+        --lwt-toolbarbutton-hover-background,
+        rgba(38, 35, 58)
+    ) !important;
+    --toolbarbutton-hover-bordercolor: var(
+        --lwt-toolbarbutton-hover-background,
+        rgba(235, 188, 186)
+    ) !important;
+    --toolbarbutton-header-bordercolor: var(
+        --lwt-toolbarbutton-hover-background,
+        rgba(38, 35, 58)
+    ) !important;
+    --toolbarbutton-active-background: var(
+        --lwt-toolbarbutton-active-background,
+        rgba(38, 35, 58)
+    ) !important;
+    --toolbarbutton-active-bordercolor: var(
+        --lwt-toolbarbutton-active-background,
+        rgba(235, 188, 186)
+    ) !important;
+    --toolbarbutton-active-boxshadow: none !important;
+    --toolbarbutton-checked-background: rgba(38, 35, 58) !important;
+    --toolbarbutton-icon-fill-attention: var(
+        --lwt-toolbarbutton-icon-fill-attention,
+        #ebbcba
+    ) !important;
+    --toolbarbutton-default-active-boxshadow: none !important;
+    --toolbar-button-hover-background-color: var(
+        --toolbarbutton-hover-background
+    ) !important;
+    --toolbar-button-hover-border-color: var(
+        --toolbarbutton-hover-bordercolor
+    ) !important;
+    --toolbar-button-hover-checked-color: var(
+        --toolbarbutton-checked-background
+    ) !important;
+    --toolbar-button-active-background-color: var(
+        --toolbarbutton-active-background
+    ) !important;
+    --toolbar-button-active-border-color: var(
+        --toolbarbutton-active-bordercolor
+    ) !important;
+
+    /* autocomplete popup */
+    --autocomplete-popup-highlight-background: rgb(25, 23, 36) !important;
+    --autocomplete-popup-separator-color: rgb(57, 53, 82) !important;
+    --autocomplete-popup-url-color: rgb(235, 188, 186) !important;
+
+    /* sidebar */
     --sidebar-background-color: rgb(25, 23, 36) !important;
-    --sidebar-text-color: rgb(144, 140, 170) !important;
-    --sidebar-highlight-background-color: rgb(31, 29, 46) !important;
-    --sidebar-highlight-text-color: rgb(25, 23, 36) !important;
-    --sidebar-border-color: rgb(25, 23, 36) !important;
-    --sidebar-highlight-border-color: rgb(38, 35, 58) !important;
-    --toolbarbutton-icon-fill: rgb(144, 140, 170) !important;
-    --lwt-toolbarbutton-hover-background: rgb(31, 29, 46) !important;
-    --lwt-toolbarbutton-active-background: rgb(31, 29, 46) !important;
+    --sidebar-text-color: rgb(224, 222, 244) !important;
+    --sidebar-border-color: rgba(0, 0, 0, 0) !important;
+    --sidebar-highlight-background-color: rgb(38, 35, 58) !important;
+    --sidebar-highlight-text-color: rgb(235, 188, 186) !important;
+
+    /* button */
+    --button-bgcolor: rgb(31, 29, 46) !important;
+    --button-hover-bgcolor: rgb(38, 35, 58) !important;
+    --button-active-bgcolor: rgb(38, 35, 58) !important;
+    --button-border-color: rgb(38, 35, 58) !important;
+    --button-text-color: rgb(224, 222, 244) !important;
+    --button-background-color: var(--button-bgcolor) !important;
+    --button-hover-background-color: var(--button-hover-bgcolor) !important;
+    --button-active-background-color: var(--button-active-bgcolor) !important;
+    --button-primary-bgcolor: rgb(31, 29, 46) !important;
+    --button-primary-hover-bgcolor: rgb(38, 35, 58) !important;
+    --button-primary-active-bgcolor: rgb(38, 35, 58) !important;
+    --button-primary-color: rgb(235, 188, 186) !important;
+    --button-primary-border-color: rgb(235, 188, 186) !important;
+    --button-primary-background-color: var(--button-primary-bgcolor) !important;
+    --button-primary-hover-background-color: var(
+        --button-primary-hover-bgcolor
+    ) !important;
+    --button-primary-active-background-color: var(
+        --button-primary-active-bgcolor
+    ) !important;
+    --button-primary-text-color: var(--button-primary-color) !important;
+    --button-pressed-shadow: none !important;
+    --button-pressed-indicator-background-color: rgb(38, 35, 58) !important;
+    --button-pressed-indicator-border-color: rgb(235, 188, 186) !important;
+    --button-pressed-indicator-shadow: none !important;
+    --button-link-text-color: var(--color-orange-30) !important;
+    --button-link-active-text-color: var(--color-orange-30) !important;
+
+    --button-border-size: 2px !important;
+    --button-margin: 6px !important;
+    --button-padding: 6px !important;
+    --button-border-radius: 6px !important;
+
+    /* input */
+    --input-bgcolor: rgb(25, 23, 36) !important;
+    --input-color: rgb(224, 222, 244) !important;
+    --input-border-color: rgb(38, 35, 58) !important;
+
+    /* checkbox */
+    --checkbox-border-color: var(--toolbar-field-border-color);
+    --checkbox-unchecked-bgcolor: var(--toolbar-field-background-color);
+    --checkbox-unchecked-hover-bgcolor: color-mix(
+        in srgb,
+        AccentColor 4%,
+        var(--checkbox-unchecked-bgcolor)
+    );
+    --checkbox-unchecked-active-bgcolor: var(--button-active-background-color);
+    --checkbox-checked-border-color: transparent;
+    --checkbox-checked-color: var(--button-primary-color);
+    --checkbox-checked-bgcolor: var(--selected-item-color);
+    --checkbox-checked-hover-bgcolor: color-mix(
+        in srgb,
+        black 10%,
+        var(--selected-item-color)
+    );
+    --checkbox-checked-active-bgcolor: color-mix(
+        in srgb,
+        black 20%,
+        var(--selected-item-color)
+    );
+
+    /* focus outline */
+    --focus-outline-color: var(--toolbar-field-focus-border-color);
+    --focus-outline-offset: 2px;
+    --focus-outline: 2px solid var(--focus-outline-color);
+
+    /* tab */
+    --tab-icon-overlay-stroke: rgb(58, 56, 77) !important;
+    --tab-icon-overlay-fill: rgb(251, 251, 254) !important;
+    --lwt-tab-text: rgb(251, 251, 254) !important;
+    --lwt-tabs-border-color: transparent !important;
+    --lwt-selected-tab-background-color: transparent !important;
+    --lwt-tab-line-color: var(--color-orange-30) !important;
+
+    --tabs-tabbar-border-size: 1px;
+
+    /* misc */
+    --new-folder-color: var(--color-orange-40) !important;
+    --selected-item-color: var(--color-orange-50) !important;
+    --selected-item-text-color: var(--color-white);
+    --splitter-color: rgb(38, 35, 58) !important;
+    --search-field-placeholder: rgb(110, 106, 134) !important;
+
+    --default-focusring-width: 2px;
+    --default-focusring: var(--default-focusring-width) dotted;
+
+    /* account central */
+    --bg-color: var(--lwt-accent-color) !important;
+    --header-bg-color: rgba(31, 29, 46) !important;
+    --accounts-bg-color: rgba(31, 29, 46) !important;
+    --text-color: var(--lwt-text-color) !important;
+    --title-color: var(--lwt-text-color) !important;
+    --primary-color: rgb(235, 188, 186) !important;
+    --primary-color-hover: rgb(235, 188, 186) !important;
+    --btn-color: var(--lwt-text-color) !important;
+    --btn-color-hover: rgb(235, 188, 186) !important;
+    --btn-bg: var(--button-bgcolor) !important;
+    --btn-bg-hover: var(--button-hover-bgcolor) !important;
+    --btn-shadow-hover: rgba(0, 0, 0, 0) !important;
+    --popup-bg: var(--button-bgcolor) !important;
 }
 
-#mail-notification-top,
-#spacesPinnedButton {
-    /* remove remote content warning */
-    display: none;
-}
-
-.spaces-toolbar:not([hidden]) {
-    /* remove spaces button */
-    background-image: none !important;
-    border-inline-end: none !important;
-}
-
-treecol,
-treecolpicker {
-    box-shadow: none !important;
-}
-
-.searchBox:hover {
-    box-shadow: none !important;
-    border: 1px solid var(--sidebar-highlight-border-color) !important;
-}
-
-.mail-toolbox:-moz-lwtheme {
-    background-image: none !important;
-}
-
-:root:-moz-lwtheme treecol {
-    border-inline-end: 1px solid var(--sidebar-highlight-border-color) !important;
-}
-
-:root[lwt-tree-brighttext] {
-    --bg-color: var(--sidebar-background-color) !important;
-}
-
-:root:-moz-lwtheme treecol:not([hideheader="true"]),
-:root:-moz-lwtheme treecolpicker:not([hideheader="true"]) {
-    padding-block: 5px !important;
-    margin-top: 5px;
-}
-
-.plain-button.tab-close-button {
-    /* remove close tab button */
+/* hide bright yellow box */
+#mail-notification-top {
     display: none !important;
 }
 
-#widget-overflow,
-#appMenu-popup {
-    margin-top: 6px !important;
+/* recolor toolbars */
+:root[lwt-tree] .list-header-bar:-moz-lwtheme,
+:root[lwt-tree] #quick-filter-bar:-moz-lwtheme {
+    background-color: var(--lwt-accent-color) !important;
+}
+
+/* remove borders */
+.spaces-toolbar:not([hidden]) {
+    border-inline-end: 1px solid var(--lwt-accent-color) !important;
+}
+unified-toolbar {
+    border-bottom: none !important;
+}
+#folderPaneSplitter,
+#messagePaneSplitter {
+    border-color: var(--lwt-accent-color) !important;
 }
 
 /* Thanks to https://github.com/ScanuNicco/Modern-ThunderBird */
-/* On macos, the titlebar has to be made high enough */
-
 #navigation-toolbox,
 #tabmail-tabs,
 #tabmail-arrowscrollbox {
-    /* Outer tab containers */
-    min-height: 45px !important;
+    min-height: 40px !important;
 }
-
+#tabs-toolbar {
+    background-image: none !important;
+    box-shadow: none !important;
+}
 .tabmail-tab {
-    /* Give the tabs a bit of a margin */
-    margin: 4px !important;
+    margin: 4px 0 !important;
 }
-
 .tab-background {
-    /* Round tab corners and add a bit of padding */
-    padding: 6px;
-    border-radius: 4px;
+    padding: 3px !important;
+    border-radius: 4px !important;
 }
-
 .tab-line {
-    /* Eliminate the line at the top of the tab */
-    height: 0px !important;
+    margin-top: 30px !important;
+}
+.tabmail-tab:hover .tab-background:not([selected="true"]) {
+    background-color: var(--toolbarbutton-hover-background) !important;
+}
+.tabmail-tab:hover .tab-background:not([selected="true"]) .tab-text {
+    color: var(--color-orange-10) !important;
+}
+.tabmail-tab:hover .tab-background:not([selected="true"]) .tab-line {
     display: none !important;
-}
-
-.tabmail-tab::after,
-.tabmail-tab::before {
-    /* Eliminate the line between inactive tabs */
-    border: none !important;
-}
-
-.mail-toolbox::after,
-.contentTabToolbox::after {
-    /* Eliminate border beow the mail toolbar */
-    border-bottom: none !important;
-}
-
-.toolbarbutton-1,
-.searchBox,
-.themeableSearchBox {
-    /* Eliminate borders, round corners, and increase height on buttons and search bars */
-    border: none !important;
-    border-radius: 5px !important;
-    height: 31px !important;
-}
-
-.panel-arrowbox {
-    /* hide the arrow on popup menus */
-    display: none;
-}
-
-.panel-arrowcontent {
-    /* Eliminate borders, round corners, and increase padding on popup menus */
-    padding: 5px !important;
-    border-radius: 5px;
-    border: none;
 }
 
 /* titlebar buttons */
@@ -176,7 +406,6 @@ treecolpicker {
     font-weight: bold;
     font-size: 6px;
     -webkit-text-stroke: 2px;
-    transform: translate(3px, -4px);
 }
 .titlebar-button:hover:before {
     color: var(--uc-caption-color, currentColor);
@@ -210,72 +439,51 @@ treecolpicker {
     scale: 1.1;
 }
 
-.gloda-search:-moz-lwtheme,
-.remote-gloda-search:-moz-lwtheme,
-:root[lwt-tree] .themeableSearchBox,
-#peopleSearchInput:not([focused="true"]):-moz-lwtheme {
-    /* aero/mica window transparency */
-    --toolbar-field-background-color: transparent !important;
-}
-
-#threadTree {
-    /* reassign thread tree color */
-    background-color: var(--sidebar-border-color) !important;
-}
-
-.header-recipient:hover,
-.header-newsgroup:hover {
-    background-color: var(--toolbar-field-highlight) !important;
-    color: var(--toolbar-field-highlight-color) !important;
-}
-
-/* scrollbar styling -not working
-thumb {
-    appearance: none !important;
-    background-color: #1f1d2e !important;
-    border-radius: 6px !important;
-    border: 2px solid #26233a !important;
-}
-slider {
-    appearance: none !important;
-    background-color: var(--arrowpanel-background);
-}
-*/
-
-treechildren::-moz-tree-row(selected) {
-    background-color: var(--lwt-selected-tab-background-color) !important;
-    border: none !important;
+/* row hover & selected states */
+[is="tree-view-table-body"] > :hover,
+li:not(.selected) > .container:hover {
+    background-color: var(--button-hover-bgcolor) !important;
+    outline: 2px solid var(--color-orange-30) !important;
+    outline-offset: -2px !important;
     border-radius: 6px !important;
 }
-treechildren::-moz-tree-row(hover) {
-    background-color: var(--toolbar-field-focus-border-color) !important;
-    border: 2px solid var(--accent-color) !important;
+[is="tree-view-table-body"]:focus tr[is="thread-row"].selected,
+[is="tree-view-table-body"]:focus-within tr[is="thread-row"].selected,
+[is="tree-view-table-body"] tr[is="thread-row"].selected:focus-within,
+#folderTree:focus-within li.selected > .container,
+#folderTree li.drop-target > .container {
+    background-color: rgb(88, 72, 80) !important;
+    outline: 2px solid var(--color-orange-30) !important;
+    outline-offset: -2px !important;
     border-radius: 6px !important;
 }
-treechildren::-moz-tree-cell-text(selected) {
-    color: var(--accent-color) !important;
-}
-treechildren::-moz-tree-cell-text(hover) {
-    color: var(--accent-color) !important;
+li.selected .name {
+    color: var(--sidebar-highlight-text-color) !important;
 }
 
-:root:-moz-lwtheme treecol:hover,
-:root:-moz-lwtheme treecolpicker:hover {
-    background-color: var(--lwt-toolbar-field-highlight) !important;
-    border-radius: 0 0 6px 6px;
+
+/* spacing between rows */
+table[is="tree-view-table"] {
+    border-spacing: 0 2px !important;
+}
+li .container {
+    margin-block: 1px !important;
 }
 
-#qfb-separator {
-    /* quick filter bar */
-    appearance: none !important;
-}
-#quick-filter-bar-main-bar toolbarbutton {
-    stroke: var(--toolbarbutton-icon-fill) !important;
-}
-
-.tabmail-tab:-moz-lwtheme {
-    color: var(--lwt-tab-text) !important;
-}
-.tabmail-tab[visuallyselected="true"]:-moz-lwtheme {
-    color: var(--lwt-text-color) !important;
+/* new message window */
+@-moz-document url(chrome://messenger/content/messengercompose/messengercompose.xhtml)
+{
+    menulist,
+    .address-container,
+    #msgSubject {
+        border: 1px solid var(--button-border-color) !important;
+    }
+    #messageArea {
+        background-color: rgb(25, 23, 36) !important;
+    }
+    #messageEditor {
+        margin: 10px !important;
+        border: 1px solid rgb(110, 106, 134) !important;
+        border-radius: 6px !important;
+    }
 }
