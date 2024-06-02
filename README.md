@@ -69,6 +69,10 @@
 
 ![](__screenshots/spotify.png)
 
+### steam
+
+![](__screenshots/steam.png)
+
 ### sumatrapdf
 
 ![](__screenshots/sumatrapdf.png)

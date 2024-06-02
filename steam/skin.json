@@ -1,0 +1,451 @@
+{
+    "Configuration": [
+        {
+            "Name": "Compacted Header",
+            "ToolTip": "Use a more compact header bar on Steam (everything is on 1 row)",
+            "Type": "CheckBox",
+            "Value": true
+        },
+        {
+            "Name": "Wallet Visibility",
+            "ToolTip": "Hide wallet amount from user menu",
+            "Type": "CheckBox",
+            "Value": false
+        },
+        {
+            "Name": "URL Visibility",
+            "ToolTip": "Hide URL bar when browsing inside steam",
+            "Type": "CheckBox",
+            "Value": true
+        },
+        {
+            "Name": "What's New Visibility",
+            "ToolTip": "Hide 'Whats New' on library page",
+            "Type": "CheckBox",
+            "Value": true
+        }
+    ],
+    "GlobalsColors": [
+        {
+            "ColorName": "--color-light",
+            "Description": "Button Colors",
+            "HexColorCode": "#26233a",
+            "OriginalColorCode": "#303030"
+        },
+        {
+            "ColorName": "--color-dark",
+            "Description": "TitleBar, TitleBar Buttons, Library <div> background, Scrollbar",
+            "HexColorCode": "#1f1d2e",
+            "OriginalColorCode": "#212121"
+        },
+        {
+            "ColorName": "--color-darker",
+            "Description": "Main Background, Library and TitleBar accent",
+            "HexColorCode": "#191724",
+            "OriginalColorCode": "#191919"
+        },
+        {
+            "ColorName": "--color-darkest",
+            "Description": "Low priority accent color",
+            "HexColorCode": "#191724",
+            "OriginalColorCode": "#141414"
+        },
+        {
+            "ColorName": "--scrollbar",
+            "Description": "Webkit Scrollbar",
+            "HexColorCode": "#1f1d2e",
+            "OriginalColorCode": "#303030"
+        },
+        {
+            "ColorName": "--black",
+            "Description": "Webkit",
+            "HexColorCode": "#191724",
+            "OriginalColorCode": "#000000"
+        },
+        {
+            "ColorName": "--black-ish",
+            "Description": "Webkit",
+            "HexColorCode": "#19172400",
+            "OriginalColorCode": "#2a3f5a00"
+        },
+        {
+            "ColorName": "--realblack",
+            "Description": "Webkit",
+            "HexColorCode": "#191724",
+            "OriginalColorCode": "#101010"
+        },
+        {
+            "ColorName": "--blacker-ish",
+            "Description": "Webkit",
+            "HexColorCode": "#191724",
+            "OriginalColorCode": "#1b1b1b"
+        },
+        {
+            "ColorName": "--blacker",
+            "Description": "Webkit",
+            "HexColorCode": "#191724",
+            "OriginalColorCode": "#1c1c1c"
+        },
+        {
+            "ColorName": "--lightblack",
+            "Description": "Webkit",
+            "HexColorCode": "#191724",
+            "OriginalColorCode": "#121212"
+        },
+        {
+            "ColorName": "--darkergrey",
+            "Description": "Webkit",
+            "HexColorCode": "#191724",
+            "OriginalColorCode": "#151515"
+        },
+        {
+            "ColorName": "--bedarkgrey",
+            "Description": "Webkit",
+            "HexColorCode": "#191724",
+            "OriginalColorCode": "#161616"
+        },
+        {
+            "ColorName": "--thegrey",
+            "Description": "Webkit",
+            "HexColorCode": "#191724",
+            "OriginalColorCode": "#181818"
+        },
+        {
+            "ColorName": "--begrey",
+            "Description": "Webkit",
+            "HexColorCode": "#26233a",
+            "OriginalColorCode": "#262627"
+        },
+        {
+            "ColorName": "--littlegrey",
+            "Description": "Webkit",
+            "HexColorCode": "#6E6A86",
+            "OriginalColorCode": "#282828"
+        },
+        {
+            "ColorName": "--darkgrey",
+            "Description": "Webkit",
+            "HexColorCode": "#191724",
+            "OriginalColorCode": "#1e1e1f"
+        },
+        {
+            "ColorName": "--grey",
+            "Description": "Webkit",
+            "HexColorCode": "#26233a",
+            "OriginalColorCode": "#2e2e2f"
+        },
+        {
+            "ColorName": "--lightgrey",
+            "Description": "Webkit",
+            "HexColorCode": "#26233a",
+            "OriginalColorCode": "#3e3e3f"
+        },
+        {
+            "ColorName": "--lightergrey",
+            "Description": "Webkit",
+            "HexColorCode": "#26233a",
+            "OriginalColorCode": "#353535"
+        },
+        {
+            "ColorName": "--grey-ish",
+            "Description": "Webkit",
+            "HexColorCode": "#26233a",
+            "OriginalColorCode": "#454545"
+        },
+        {
+            "ColorName": "--darkerwhite",
+            "Description": "Webkit",
+            "HexColorCode": "#6e6a86",
+            "OriginalColorCode": "#b8b6b4"
+        },
+        {
+            "ColorName": "--darkwhite",
+            "Description": "Webkit",
+            "HexColorCode": "#908caa",
+            "OriginalColorCode": "#d9dadd"
+        },
+        {
+            "ColorName": "--white",
+            "Description": "Webkit",
+            "HexColorCode": "#e0def4",
+            "OriginalColorCode": "#ffffff"
+        },
+        {
+            "ColorName": "--darkblue",
+            "Description": "Webkit",
+            "HexColorCode": "#d7827e",
+            "OriginalColorCode": "#0e5984"
+        },
+        {
+            "ColorName": "--blue",
+            "Description": "Webkit",
+            "HexColorCode": "#ebbcba",
+            "OriginalColorCode": "#4f95bd"
+        },
+        {
+            "ColorName": "--blu",
+            "Description": "Webkit",
+            "HexColorCode": "#ebbcba",
+            "OriginalColorCode": "#67c1f5"
+        },
+        {
+            "ColorName": "--brightblue",
+            "Description": "Webkit",
+            "HexColorCode": "#ebbcba",
+            "OriginalColorCode": "#1a9fff"
+        },
+        {
+            "ColorName": "--blue-ish",
+            "Description": "Webkit",
+            "HexColorCode": "#ea9a97",
+            "OriginalColorCode": "#7cbef8"
+        },
+        {
+            "ColorName": "--blue-er",
+            "Description": "Webkit",
+            "HexColorCode": "#ea9a97",
+            "OriginalColorCode": "#a4d7f5"
+        },
+        {
+            "ColorName": "--lightblue",
+            "Description": "Webkit",
+            "HexColorCode": "#ebbcba",
+            "OriginalColorCode": "#c4e4f2"
+        },
+        {
+            "ColorName": "--darkgreen",
+            "Description": "Webkit",
+            "HexColorCode": "#286983",
+            "OriginalColorCode": "#5c7e10"
+        },
+        {
+            "ColorName": "--green",
+            "Description": "Webkit",
+            "HexColorCode": "#31748f",
+            "OriginalColorCode": "#d2e885"
+        },
+        {
+            "ColorName": "--ingame",
+            "Description": "Webkit",
+            "HexColorCode": "#31748f",
+            "OriginalColorCode": "#90ba3c"
+        },
+        {
+            "ColorName": "--online",
+            "Description": "Webkit",
+            "HexColorCode": "#9ccfd8",
+            "OriginalColorCode": "#57cbde"
+        },
+        {
+            "ColorName": "--offline",
+            "Description": "Webkit",
+            "HexColorCode": "#6e6a86",
+            "OriginalColorCode": "#898989"
+        },
+        {
+            "ColorName": "--gold",
+            "Description": "Webkit",
+            "HexColorCode": "#f6c177",
+            "OriginalColorCode": "#ffcc6a"
+        },
+        {
+            "ColorName": "--bronze",
+            "Description": "Webkit",
+            "HexColorCode": "#ebbcba",
+            "OriginalColorCode": "#695833"
+        },
+        {
+            "ColorName": "--purple",
+            "Description": "Webkit",
+            "HexColorCode": "#c4a7e7",
+            "OriginalColorCode": "#6624e2"
+        },
+        {
+            "ColorName": "--pink",
+            "Description": "Webkit",
+            "HexColorCode": "#ebbcba",
+            "OriginalColorCode": "#FF00FF"
+        },
+        {
+            "ColorName": "--red",
+            "Description": "Webkit",
+            "HexColorCode": "#eb6f92",
+            "OriginalColorCode": "#FF0000"
+        },
+        {
+            "ColorName": "--orange",
+            "Description": "Webkit",
+            "HexColorCode": "#d7827e",
+            "OriginalColorCode": "#FF6600"
+        },
+        {
+            "ColorName": "--yellow",
+            "Description": "Webkit",
+            "HexColorCode": "#ea9d34",
+            "OriginalColorCode": "#FFFF00"
+        }
+    ],
+    "Patches": [
+        {
+            "MatchRegexString": "SteamBrowser_Find",
+            "TargetCss": "Steam.css"
+        },
+        {
+            "MatchRegexString": "^Steam$",
+            "Statement": [
+                {
+                    "Equals": true,
+                    "False": {
+                        "TargetCss": "headers/NormalHeader.css",
+                        "TargetJs": "headers/NormalHeader.js"
+                    },
+                    "If": "Compacted Header",
+                    "True": {
+                        "TargetCss": "headers/CompactHeader.css",
+                        "TargetJs": "headers/CompactHeader.js"
+                    }
+                },
+                {
+                    "Equals": true,
+                    "False": {},
+                    "If": "Wallet Visibility",
+                    "True": {
+                        "TargetCss": "config/WalletVisibility.css"
+                    }
+                },
+                {
+                    "Equals": true,
+                    "False": {},
+                    "If": "URL Visibility",
+                    "True": {
+                        "TargetCss": "config/URLBarVisibility.css"
+                    }
+                },
+                {
+                    "Equals": true,
+                    "False": {},
+                    "If": "What's New Visibility",
+                    "True": {
+                        "TargetCss": "config/WhatsNewVisibility.css"
+                    }
+                }
+            ],
+            "TargetCss": "Steam.css"
+        },
+        {
+            "MatchRegexString": "Shutdown",
+            "TargetCss": "Steam.css"
+        },
+        {
+            "MatchRegexString": "friendsui-container",
+            "TargetCss": "steam/friends/FriendsList.css",
+            "TargetJs": "steam/friends/FriendsList.js"
+        },
+        {
+            "MatchRegexString": "ModalDialogPopup",
+            "TargetCss": "Steam.css"
+        },
+        {
+            "MatchRegexString": ".*Supernav$",
+            "TargetCss": "Steam.css"
+        },
+        {
+            "MatchRegexString": ".*Menu$",
+            "TargetCss": "Steam.css"
+        },
+        {
+            "MatchRegexString": ".*Properties.*",
+            "TargetCss": "Steam.css"
+        },
+        {
+            "MatchRegexString": "Special Offers",
+            "TargetCss": "Steam.css"
+        },
+        {
+            "MatchRegexString": "Steam Big Picture Mode",
+            "TargetCss": "bigpicture.custom.css"
+        },
+        {
+            "MatchRegexString": ".*SP Overlay:.*",
+            "TargetCss": "overlay/Overlay.css"
+        },
+        {
+            "MatchRegexString": "Achievements",
+            "TargetCss": "Steam.css"
+        },
+        {
+            "MatchRegexString": "GameNotes",
+            "TargetCss": "overlay/GameNotes.css"
+        },
+        {
+            "MatchRegexString": "ScreenshotManager",
+            "TargetCss": "overlay/ScreenshotManager.css"
+        },
+        {
+            "MatchRegexString": "GameOverview",
+            "TargetCss": "overlay/GameOverview.css"
+        },
+        {
+            "MatchRegexString": "SoundtrackPlayer",
+            "TargetCss": "Steam.css"
+        },
+        {
+            "MatchRegexString": "OverlayBrowser_(?!.*_Find$).*",
+            "TargetCss": "overlay/Browser.css"
+        },
+        {
+            "MatchRegexString": "OverlayBrowser_.*_Find",
+            "TargetCss": "overlay/Browser.css"
+        },
+        {
+            "MatchRegexString": "OverlayTab\\d+_Find",
+            "TargetCss": "overlay/Browser.css"
+        },
+        {
+            "MatchRegexString": "OverlayBrowser_Browser",
+            "TargetCss": "overlay/Browser.css"
+        },
+        {
+            "MatchRegexString": "^Account.",
+            "Statement": {
+                "Equals": true,
+                "False": {},
+                "If": "Wallet Visibility",
+                "True": {
+                    "TargetCss": "config/WalletVisibility.css"
+                }
+            }
+        }
+    ],
+    "Steam-WebKit": "webkit/webkit.css",
+    "UseDefaultPatches": true,
+    "author": "ShadowMonster",
+    "description": "A sleek and elegant theme that brings a darker, more immersive experience to your Steam client.",
+    "discord_support": {
+        "inviteCodeExcludingLink": "NcNMP6r2Cw"
+    },
+    "git": {
+        "commit": "8d69df399b45d0b1ae8ddcbfb0a73b2513cf1e69",
+        "date": "2024-05-28T04:01:22Z",
+        "download": "https://codeload.github.com/ShadowMonster99/Simply-Dark/zip/refs/heads/main",
+        "message": "Merge pull request #18 from clawdius/minifix\n\nFixed Inventory Page",
+        "url": "https://github.com/ShadowMonster99/Simply-Dark/commit/8d69df399b45d0b1ae8ddcbfb0a73b2513cf1e69"
+    },
+    "github": {
+        "owner": "ShadowMonster99",
+        "repo_name": "Simply-Dark"
+    },
+    "header_image": "https://i.imgur.com/uXtPTnr.png",
+    "name": "Simple Dark.",
+    "native-name": "Simply-Dark-mod",
+    "remote": false,
+    "splash_image": "https://i.imgur.com/uXtPTnr.png",
+    "tags": [
+        "Minimal",
+        "Dark",
+        "Sleek",
+        "Compact"
+    ],
+    "update_required": false,
+    "version": "1.2.5"
+}

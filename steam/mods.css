@@ -1,0 +1,71 @@
+/* context menu cuttoff bandaid fix */
+body.ContextMenuPopupBody.DesktopUI {
+    zoom: 0.99;
+}
+
+/* caption buttons */
+.title-area-icon svg * {
+    display: none;
+}
+.DesktopUI .title-area-icon.minimizeButton svg,
+.friendsui-container .title-area-icon.minimizeButton svg {
+    transform: unset !important;
+}
+.DesktopUI .title-area-icon, .friendsui-container .title-area-icon {
+    width: 46px !important;
+}
+.DesktopUI .title-area-icon:hover,
+.friendsui-container .title-area-icon:hover {
+    background: transparent !important;
+}
+[class="title-area-icon minimizeButton windowControlButton"] .title-area-icon-inner {
+    --caption-color: rgb(246, 193, 119);
+    --caption-color-hover: rgba(246, 193, 119, 0.3);
+}
+[class="title-area-icon maximizeButton windowControlButton"] .title-area-icon-inner {
+    --caption-color: rgb(156, 207, 216);
+    --caption-color-hover: rgb(156, 207, 216, 0.3);
+}
+[class="title-area-icon closeButton windowControlButton"] .title-area-icon-inner {
+    --caption-color: rgb(235, 188, 186);
+    --caption-color-hover: rgba(235, 188, 186, 0.3);
+}
+.title-area-icon-inner {
+    list-style-image: none;
+    border-radius: 100%;
+    background: var(--caption-color, currentColor) !important;
+    height: 14px !important;
+    width: 14px !important;
+}
+.title-area-icon-inner::before {
+    font-family: "Segoe Fluent Icons" !important;
+    font-weight: bold;
+    scale: 0.4;
+    -webkit-text-stroke: 2px;
+    color: var(--caption-color, currentColor);
+}
+[class="title-area-icon maximizeButton windowControlButton"]:hover .title-area-icon-inner::before {
+    content: "\ea3a";
+    position: absolute;
+}
+[class="title-area-icon minimizeButton windowControlButton"]:hover .title-area-icon-inner::before {
+    content: "\f7af";
+    position: absolute;
+    rotate: -30deg;
+}
+[class="title-area-icon closeButton windowControlButton"]:hover .title-area-icon-inner::before {
+    content: "\e711";
+    position: absolute;
+}
+.title-area-icon:hover .title-area-icon-inner {
+    background: var(--caption-color-hover, currentColor) !important;
+    outline: 2px solid var(--caption-color, currentColor);
+    outline-offset: -1px;
+}
+._39oUCO1OuizVPwcnnv88no ._1-9sir4j_KQiMqdkZjQN0u  {
+    right: 130px !important;
+}
+._1_yS5UP7el0aN4vntx3dx {
+    /* right: 345px !important; */
+    transform: translateX(-40px);
+}
