@@ -95,13 +95,13 @@
         {
             "ColorName": "--darkergrey",
             "Description": "Webkit",
-            "HexColorCode": "#191724",
+            "HexColorCode": "#26233a",
             "OriginalColorCode": "#151515"
         },
         {
             "ColorName": "--bedarkgrey",
             "Description": "Webkit",
-            "HexColorCode": "#191724",
+            "HexColorCode": "#1f1d2e",
             "OriginalColorCode": "#161616"
         },
         {
@@ -131,7 +131,7 @@
         {
             "ColorName": "--grey",
             "Description": "Webkit",
-            "HexColorCode": "#26233a",
+            "HexColorCode": "#1f1d2e",
             "OriginalColorCode": "#2e2e2f"
         },
         {
@@ -424,20 +424,13 @@
     "discord_support": {
         "inviteCodeExcludingLink": "NcNMP6r2Cw"
     },
-    "git": {
-        "commit": "8d69df399b45d0b1ae8ddcbfb0a73b2513cf1e69",
-        "date": "2024-05-28T04:01:22Z",
-        "download": "https://codeload.github.com/ShadowMonster99/Simply-Dark/zip/refs/heads/main",
-        "message": "Merge pull request #18 from clawdius/minifix\n\nFixed Inventory Page",
-        "url": "https://github.com/ShadowMonster99/Simply-Dark/commit/8d69df399b45d0b1ae8ddcbfb0a73b2513cf1e69"
-    },
     "github": {
         "owner": "ShadowMonster99",
         "repo_name": "Simply-Dark"
     },
     "header_image": "https://i.imgur.com/uXtPTnr.png",
-    "name": "Simple Dark.",
-    "native-name": "Simply-Dark-mod",
+    "name": "Simply Dark (Rose Pine)",
+    "native-name": "Simply-Dark-rp-mod",
     "remote": false,
     "splash_image": "https://i.imgur.com/uXtPTnr.png",
     "tags": [
