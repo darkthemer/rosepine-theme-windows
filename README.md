@@ -53,6 +53,10 @@
 
 ![](__screenshots/nomacs.png)
 
+### obs
+
+![](__screenshots/obs.png)
+
 ### obsidian
 
 ![](__screenshots/obsidian.png)
