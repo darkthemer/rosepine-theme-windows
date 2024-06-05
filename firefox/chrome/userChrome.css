@@ -99,6 +99,20 @@ html,
     width: fit-content !important;
 }
 
+/* hide back & forward buttons */
+#back-button {
+    display: flex !important;
+    width: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
+    opacity: 1 !important;
+    transition: all 0.2s ease !important;
+}
+#back-button[disabled="true"] {
+    width: 0 !important;
+    opacity: 0 !important;
+    padding: 0 !important;
+    transition: all 0.2s ease !important;
+}
+
 /* show extension button on hover */
 #unified-extensions-button:hover .toolbarbutton-icon,
 #unified-extensions-button[open="true"] .toolbarbutton-icon {
@@ -119,6 +133,9 @@ html,
 #urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner,
 .urlbarView:not([noresults]) > .search-one-offs:not([hidden]) {
     border-top: 1px solid var(--uc-seperator-colour) !important;
+}
+#urlbar[open] > #urlbar-background {
+    border: 1px solid var(--arrowpanel-border-color) !important;
 }
 
 /* active tab color fix */

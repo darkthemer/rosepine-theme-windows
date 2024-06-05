@@ -81,13 +81,13 @@
   /*  Firefox can be a little wonky with the vertical
    *  URL Bar placement. Change this variable to adapt
    *  to this when necessary.
-   */ --uc-urlbar-top-spacing: 1px;
+   */ --uc-urlbar-top-spacing: 0.5px;
 
 }
 
 
 /* Disable the Navigation Buttons */
-#back-button,
+/* #back-button, */
 #forward-button { display: none !important; }
 
 /* Disables the Tracking Protection Shield */
@@ -105,8 +105,8 @@
 /* Hide the »Go«-arrow in the URL Bar */
 #urlbar-go-button { display: none !important; }
 
-/* Hides the Extensions Menu Icon */
-#unified-extensions-button { display: none !important; }
+/* Hides the Extensions Menu Icon
+#unified-extensions-button { display: none !important; } */
 
 
 
