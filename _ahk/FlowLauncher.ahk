@@ -18,3 +18,7 @@ KeyWait, LWin
 if (A_PriorKey="LWin")
 Send {Alt down}{Space}{Alt up}
 return
+
+Alt & Tab::
+Send {Alt down}{Space}{Alt up}w
+return
