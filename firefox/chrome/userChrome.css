@@ -90,7 +90,7 @@ html,
 }
 
 /* center url text */
-#urlbar-input-container {
+#urlbar-input {
     text-align: center !important;
 }
 
