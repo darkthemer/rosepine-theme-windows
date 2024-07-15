@@ -102,7 +102,7 @@ div[class*="titleBar-"] {
 .expandedFolderIconWrapper_bc7085 {
     transform: scale(0.1, 2);
 }
-#app-mount .guilds_a4d4d9 [class*=expandedFolderBackground] {
+#app-mount .guilds_a4d4d9 [class*="expandedFolderBackground"] {
     background: transparent !important;
 }
 
@@ -130,18 +130,18 @@ div[class*="titleBar-"] {
 }
 
 /* custom active server pill */
-#app-mount .guilds_a4d4d9 [class*=pill] {
+#app-mount .guilds_a4d4d9 [class*="pill"] {
     top: calc(var(--server-size) / -2 + var(--server-size) + 8px) !important;
 }
-.item_fd07a3 {
+.item_c4cd66 {
     background-color: var(--mainColor);
 }
-#app-mount .guilds_a4d4d9 [class*=pill] span {
+#app-mount .guilds_a4d4d9 [class*="pill"] span {
     width: 2px !important;
 }
 
 /* top bar removal + hoverable channel description and search bar */
-#app-mount .container_e44302.themed_e44302 {
+#app-mount .container_fc4f04.themed_fc4f04 {
     background: unset !important;
     background-image: linear-gradient(
         var(--backgroundColor02) 30%,
@@ -149,10 +149,10 @@ div[class*="titleBar-"] {
         transparent
     ) !important;
 }
-.container_e44302 {
+.container_fc4f04 {
     position: absolute !important;
 }
-.children_e44302 > *:not(.topic_bf3bbb.expandable_bf3bbb, .topPill_a0) {
+.children_fc4f04 > *:not(.topic_bf3bbb.expandable_bf3bbb, .topPill_a0) {
     display: none;
 }
 .topic_bf3bbb.expandable_bf3bbb,
@@ -161,7 +161,7 @@ div[class*="titleBar-"] {
     opacity: 0;
     transition: opacity 0.2s;
 }
-.toolbar_e44302 > *:not(.search_ff5f90) {
+.toolbar_fc4f04 > *:not(.search_ff5f90) {
     visibility: hidden;
     width: 0;
     margin: 0;
@@ -199,7 +199,7 @@ div[class*="titleBar-"] {
 }
 
 /* consistent avatar corner rounding */
-.avatar_ec86aa,
+.avatar_f9f2ca,
 .avatar_cdc675 {
     border-radius: var(--rs-avatar-shape);
 }
@@ -218,10 +218,10 @@ div[class*="titleBar-"] {
 }
 
 /* custom unread divider */
-.isUnread_fc5f50 .content_fc5f50 {
+.isUnread_c2654d .content_c2654d {
     border: 1px solid var(--divider-color);
 }
-.unreadPill_fc5f50 {
+.unreadPill_c2654d {
     color: var(--backgroundColor02);
 }
 
