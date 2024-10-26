@@ -3124,9 +3124,6 @@ url(about:performance), url(about:url-classifier), url(about:processes) {
     --overlay-button-hover-bg-color: rgba(115, 115, 115, 1);
     --loading-icon: url(images/loading-dark.svg);
 }
-.toolbarButton::before, .secondaryToolbarButton::before, .dropdownToolbarButton::after, .treeItemToggler::before {
-    background-color: rgba(255, 255, 255, 1) !important;
-}
 #toolbarContainer {
     box-shadow: none !important;
 }
