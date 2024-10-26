@@ -31,7 +31,13 @@
 
 ### discord
 
+#### current
+
 ![](__screenshots/discord.png)
+
+#### old
+
+![](__screenshots/discord-old.png)
 
 ### explorer
 
