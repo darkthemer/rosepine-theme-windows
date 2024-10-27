@@ -86,6 +86,8 @@
 	--rose-2: oklch(63.63% 0.0544 21.14);
 }
 
+/* ===custom mods=== */
+/* font style */
 * {
 	font-size: 14px !important;
 	line-height: 1.4;
@@ -105,6 +107,8 @@ div[id*='message-content'] h3::before {
 div[id*='message-content'] small::before {
 	content: "-# ";
 }
+
+/* pane header */
 [class^='sidebar_'] > [class^='container_']::after, 
 .container_fc4f04::after, 
 [class^='chatContent_'] > [class^='messagesWrapper_']::after, 
@@ -117,12 +121,23 @@ div[id*='message-content'] small::before {
 [class^='nowPlayingColumn_']::after {
     text-transform: capitalize;
 }
+
+/* server icon resize */
 nav[class*='guilds'] div[class*='blobContainer'], 
 div[class*='closedFolderIconWrapper'] div[class*='icon'] {
 	scale: 0.6;
 }
-section[class*='title'] svg, 
+
+/* button icon resize */
+section[class*='title'] svg,
+div[class*='upperContainer'] svg,
 div[class*='channelBottomBarArea'] :is(svg, div[class*='spriteContainer']),
-nav[class*='container'] li[class*='containerDefault'] svg {
+nav[class*='container'] svg,
+nav[class*='privateChannels'] svg {
 	scale: 0.7;
+}
+
+/* fix annoyance */
+aside[class*='container'] div[class*='scroller'] {
+	border-left: none;
 }
