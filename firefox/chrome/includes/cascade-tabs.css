@@ -148,3 +148,9 @@
 #TabsToolbar .tab-icon-overlay:not([crashed])[soundplaying]:hover,
 #TabsToolbar .tab-icon-overlay:not([crashed])[muted]:hover,
 #TabsToolbar .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover { color: var(--toolbar-bgcolor) !important; }
+
+
+/* fix tab position */
+#tabbrowser-tabs {
+  margin-inline-start: 35vw;
+}
