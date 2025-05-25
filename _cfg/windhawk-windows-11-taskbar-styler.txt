@@ -1,8 +1,7 @@
 {
   "theme": "RosePine",
-  "controlStyles[0].target": "",
-  "controlStyles[0].styles[0]": "",
-  "resourceVariables[0].variableKey": "",
-  "resourceVariables[0].value": "",
-  "styleConstants[0]": ""
+  "controlStyles[0].target": "Grid#OverflowRootGrid > Border",
+  "controlStyles[0].styles[0]": "Background=#191724",
+  "controlStyles[0].styles[1]": "BorderBrush=#EBBCBA",
+  "controlStyles[0].styles[2]": "BorderThickness=1"
 }
