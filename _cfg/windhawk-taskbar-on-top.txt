@@ -1,0 +1,5 @@
+{
+  "taskbarLocation": "top",
+  "taskbarLocationSecondary": "sameAsPrimary",
+  "runningIndicatorsOnTop": 0
+}

@@ -1,0 +1,12 @@
+{
+  "showframe": 1,
+  "showmenu": 0,
+  "showcontrols": 0,
+  "ignoreminsize": 0,
+  "showframeonothers": 0,
+  "transparentcontrols": 1,
+  "allowuntested": 0,
+  "transparentrendering": 1,
+  "noforceddarkmode": 0,
+  "forceextensions": 1
+}

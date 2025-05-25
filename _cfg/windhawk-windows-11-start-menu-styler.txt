@@ -1,0 +1,10 @@
+{
+  "theme": "RosePine",
+  "controlStyles[0].target": "",
+  "controlStyles[0].styles[0]": "",
+  "webContentStyles[0].target": "",
+  "webContentStyles[0].styles[0]": "",
+  "webContentCustomJs": "",
+  "resourceVariables[0].variableKey": "",
+  "resourceVariables[0].value": ""
+}

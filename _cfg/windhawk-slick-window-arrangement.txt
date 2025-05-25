@@ -1,0 +1,10 @@
+{
+  "SnapWindowsWhenDragging": 0,
+  "SnapWindowsDistance": 25,
+  "KeysToDisableSnapping.Ctrl": 0,
+  "KeysToDisableSnapping.Alt": 1,
+  "KeysToDisableSnapping.Shift": 0,
+  "SlidingAnimation": 1,
+  "SnapWindowsWhenSliding": 1,
+  "SlidingAnimationSlowdown": 15
+}

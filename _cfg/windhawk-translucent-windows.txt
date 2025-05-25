@@ -1,0 +1,15 @@
+{
+  "ThemeBackground": 0,
+  "type": "none",
+  "ExtendFrame": 0,
+  "TitlebarColor.ColorTitlebar": 1,
+  "TitlebarColor.titlerbarstyles_active": "191724",
+  "TitlebarColor.titlerbarstyles_inactive": "191724",
+  "TitlebarTextColor.ColorTitlebarText": 1,
+  "TitlebarTextColor.titlerbarcolorstyles_active": "908CAA",
+  "TitlebarTextColor.titlerbarcolorstyles_inactive": "26233A",
+  "BorderColor.ColorBorder": 1,
+  "BorderColor.borderstyles_active": "EBBCBA",
+  "BorderColor.borderstyles_inactive": "26233A",
+  "BorderColor.MenuBorderColor": 0
+}
