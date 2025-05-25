@@ -150,7 +150,7 @@
     --panel-item-hover-bgcolor: rgb(38, 35, 58) !important;
     --panel-item-active-bgcolor: rgb(38, 35, 58) !important;
     --panel-separator-color: rgba(57, 53, 82) !important;
-    --panel-disabled-color: rgb(31, 29, 46) !important;
+    --panel-disabled-color: rgba(110, 106, 134) !important;
 
     --arrowpanel-border-radius: 8px;
     --arrowpanel-padding: 16px;
@@ -263,7 +263,10 @@
     /* input */
     --input-bgcolor: rgb(25, 23, 36) !important;
     --input-color: rgb(224, 222, 244) !important;
-    --input-border-color: rgb(38, 35, 58) !important;
+    --input-border-color: rgb(25, 23, 36) !important;
+    --search-bar-background: rgb(25, 23, 36) !important;
+    --search-bar-color: rgb(224, 222, 244) !important;
+    --search-bar-border-color: rgb(25, 23, 36) !important;
 
     /* checkbox */
     --checkbox-border-color: var(--toolbar-field-border-color);
@@ -299,7 +302,7 @@
     --lwt-tab-text: rgb(251, 251, 254) !important;
     --lwt-tabs-border-color: transparent !important;
     --lwt-selected-tab-background-color: transparent !important;
-    --lwt-tab-line-color: var(--color-orange-30) !important;
+    --lwt-tab-line-color: transparent !important;
 
     --tabs-tabbar-border-size: 1px;
 
@@ -363,17 +366,29 @@ unified-toolbar {
     box-shadow: none !important;
 }
 .tabmail-tab {
-    margin: 4px 0 !important;
+    margin: 2px !important;
+}
+.tabmail-tab {
+    :root:not([lwtheme]) &:not([selected]) {
+        color: var(--panel-disabled-color) !important;
+    }
 }
 .tab-background {
     padding: 3px !important;
     border-radius: 4px !important;
 }
+.tab-background {
+    &[selected="true"] {
+        background-color: rgb(33, 32, 46) !important;
+    }
+}
 .tab-line {
-    margin-top: 30px !important;
+    &[selected="true"] {
+        background-color: transparent !important;
+    }
 }
 .tabmail-tab:hover .tab-background:not([selected="true"]) {
-    background-color: var(--toolbarbutton-hover-background) !important;
+    background-color: rgb(33, 32, 46) !important;
 }
 .tabmail-tab:hover .tab-background:not([selected="true"]) .tab-text {
     color: var(--color-orange-10) !important;
@@ -460,7 +475,16 @@ li:not(.selected) > .container:hover {
 li.selected .name {
     color: var(--sidebar-highlight-text-color) !important;
 }
-
+:is(ul, ol)[role="tree"] {
+    & .container {
+        li.selected > & {
+            border-color: transparent !important;
+            background-color: var(--button-bgcolor) !important;
+            --indicator-border: 0 !important;
+            --indicator-background: transparent !important;
+        }
+    }
+}
 
 /* spacing between rows */
 table[is="tree-view-table"] {
@@ -485,5 +509,19 @@ li .container {
         margin: 10px !important;
         border: 1px solid rgb(110, 106, 134) !important;
         border-radius: 6px !important;
+    }
+}
+
+/* search box */
+.searchBox,
+.themeableSearchBox {
+    background-color: var(--search-bar-background) !important;
+    color: var(--search-bar-color) !important;
+    border: 1px solid var(--search-bar-border-color) !important;
+    box-shadow: none !important;
+}
+.contentTabSecurity {
+    &.secure-connection-icon {
+        fill: var(--color-green-70) !important;
     }
 }
