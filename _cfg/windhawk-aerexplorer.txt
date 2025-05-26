@@ -1,0 +1,22 @@
+{
+  "alwayscpl": 1,
+  "smalladdress": 0,
+  "tbst": "custom",
+  "dropdownwidth": 0,
+  "refreshwidth": 0,
+  "oldsearch": 1,
+  "noribbon": 1,
+  "listview": 0,
+  "colheaders": 0,
+  "npst": "default",
+  "nopins": 1,
+  "navbarglass": 1,
+  "nocomposition": 0,
+  "hidetitle": 1,
+  "noup": 1,
+  "aerotravel": 0,
+  "detailspane": 1,
+  "classicgrouping": 1,
+  "nopcfolders": 0,
+  "vistasearchplaceholder": 0
+}
