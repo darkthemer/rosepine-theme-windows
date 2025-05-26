@@ -8,7 +8,7 @@
   "TitlebarTextColor.ColorTitlebarText": 1,
   "TitlebarTextColor.titlerbarcolorstyles_active": "908CAA",
   "TitlebarTextColor.titlerbarcolorstyles_inactive": "26233A",
-  "BorderColor.ColorBorder": 1,
+  "BorderColor.ColorBorder": 0,
   "BorderColor.borderstyles_active": "EBBCBA",
   "BorderColor.borderstyles_inactive": "26233A",
   "BorderColor.MenuBorderColor": 0
