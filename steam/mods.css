@@ -1,8 +1,3 @@
-/* context menu cuttoff bandaid fix */
-body.ContextMenuPopupBody.DesktopUI {
-    zoom: 0.99;
-}
-
 /* caption buttons */
 .title-area-icon svg * {
     display: none;
