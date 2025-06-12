@@ -1,16 +1,23 @@
-# rosepine-theme-windows
+<p align="center">
+    <img src="https://github.com/rose-pine/rose-pine-theme/raw/main/assets/icon.png" width="80" />
+    <h2 align="center">rosepine-theme-windows</h2>
+</p>
 
-> All natural [pine](https://rosepinetheme.com/), faux fur and a bit of soho vibes for the classy minimalist.
+<p align="center">All natural pine, faux fur and a bit of soho vibes for the classy minimalist</p>
 
-### link to theme and icons:
+## :art: visual style
 
-[niivu - Rose Pine for Windows 11 22H2](https://www.deviantart.com/niivu/art/Rose-Pine-for-Windows-11-22H2-955213259)
+[niivu - Rose Pine for Windows 11](https://www.deviantart.com/niivu/art/Rose-Pine-for-Windows-11-955213259)
 
-### link to cursor:
+## :bridge_at_night: icon pack
 
-[BIueGuy - Crystal Clear v4.1 | Original](https://www.deviantart.com/biueguy/art/Crystal-Clear-v4-1-Original-298678459)
+[niivu - Rose Pine Icon Theme](https://github.com/niivu/resource-redirect-icon-themes/blob/main/Resource%20Redirect%20themes/Rose%20Pine.zip)
 
-### link to sound scheme:
+## :fu: cursor
+
+[BIueGuy - Crystal Clear v5 | Aero](https://www.deviantart.com/biueguy/art/Crystal-Clear-v5-Aero-298678459)
+
+## :sound: sound scheme
 
 [WindowsAesthetics - Aura II Sound Scheme](https://www.deviantart.com/windowsaesthetics/art/Aura-II-Sound-Scheme-708520612)
 
@@ -18,12 +25,12 @@
 
 ## Screenshots
 
-### desktop
+### Desktop
 
-![desktop0](__screenshots/desktop.png)
-![desktop1](__screenshots/desktop1.png)
-![desktop2](__screenshots/desktop2.png)
-![desktop2](__screenshots/desktop3.png)
+![](__screenshots/desktop0.png)
+![](__screenshots/desktop1.png)
+![](__screenshots/desktop2.png)
+![](__screenshots/desktop3.png)
 
 ### caprine
 
@@ -51,6 +58,10 @@
 
 ![](__screenshots/flowlauncher.png)
 
+### jdownloader
+
+![](__screenshots/jdownloader.png)
+
 ### mpc-hc
 
 ![](__screenshots/mpc-hc.png)
@@ -69,7 +80,13 @@
 
 ### playnite
 
+#### unmaintained
+
 ![](__screenshots/playnite.png)
+
+### sharex
+
+![](__screenshots/sharex.png)
 
 ### speedcrunch
 
