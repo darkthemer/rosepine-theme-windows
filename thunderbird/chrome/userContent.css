@@ -190,3 +190,31 @@
         --in-content-primary-button-text-color
     );
 }
+
+@-moz-document domain(proton.me)
+{
+    .main-area-border,
+    .border-top {
+        border-block-start: 0 !important;
+    }
+    .toolbar:not(.toolbar--in-container),
+    .border-bottom,
+    .message-container.is-opened .message-header {
+        border-block-end: 0 !important;
+    }
+    .vr {
+        border-inline-end: 0 !important;
+    }
+    .main.ui-standard,
+    .toolbar-row-toolbar {
+        border: 0 !important;
+    }
+    .logo.with-wordmark {
+        background: white;
+        padding: 0 8px;
+        border-radius: 6px;
+    }
+    .topnav-list :is(div, li):has(button[class*="button-promotion"]) {
+        display: none;
+    }
+}
