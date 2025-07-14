@@ -1,10 +1,13 @@
 {
   "theme": "RosePine",
-  "controlStyles[0].target": "",
-  "controlStyles[0].styles[0]": "",
-  "webContentStyles[0].target": "",
-  "webContentStyles[0].styles[0]": "",
-  "webContentCustomJs": "",
-  "resourceVariables[0].variableKey": "",
-  "resourceVariables[0].value": ""
+  "controlStyles[0].target": "Windows.UI.Xaml.Controls.Border#AcrylicBorder",
+  "controlStyles[0].styles[0]": "BorderThickness=1",
+  "controlStyles[0].styles[1]": "CornerRadius=6",
+  "controlStyles[1].target": "Windows.UI.Xaml.Controls.Border#AppBorder",
+  "controlStyles[1].styles[0]": "BorderThickness=1",
+  "controlStyles[1].styles[1]": "CornerRadius=6",
+  "controlStyles[2].target": "StartDocked.StartSizingFramePanel",
+  "controlStyles[2].styles[0]": "CornerRadius=6",
+  "controlStyles[3].target": "Windows.UI.Xaml.Controls.Grid#OuterBorderGrid",
+  "controlStyles[3].styles[0]": "CornerRadius=6"
 }

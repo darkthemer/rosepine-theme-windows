@@ -1,0 +1,10 @@
+{
+  "themeFolder": "",
+  "allResourceRedirect": 1,
+  "iconTheme": "Rose Pine|themes/icons/niivu/Rose%20Pine.zip",
+  "themePaths[0]": "",
+  "redirectionResourcePaths[0].original": "%SystemRoot%\\Branding\\Basebrd\\basebrd.dll",
+  "redirectionResourcePaths[0].redirect": "E:\\Theming\\Windhawk\\Resource Redirect\\basebrd.dll",
+  "redirectionResourcePaths[1].original": "%SystemRoot%\\System32\\ExplorerFrame.dll",
+  "redirectionResourcePaths[1].redirect": "E:\\Theming\\Windhawk\\Resource Redirect\\ExplorerFrame.dll"
+}
