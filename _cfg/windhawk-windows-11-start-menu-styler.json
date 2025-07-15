@@ -1,5 +1,6 @@
 {
   "theme": "RosePine",
+  "// Custom Modifications": "",
   "controlStyles[0].target": "Windows.UI.Xaml.Controls.Border#AcrylicBorder",
   "controlStyles[0].styles[0]": "BorderThickness=1",
   "controlStyles[0].styles[1]": "CornerRadius=6",

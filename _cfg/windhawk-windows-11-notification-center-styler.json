@@ -119,5 +119,5 @@
   "controlStyles[50].target": "Windows.UI.Xaml.Controls.TextBlock#Attribution",
   "controlStyles[50].styles[0]": "Foreground=#908CAA",
   "controlStyles[51].target": "Windows.UI.Xaml.Controls.TextBlock#NoNotificationsTextBlock",
-  "controlStyles[51].styles[0]": "Foreground=#908CAA",
+  "controlStyles[51].styles[0]": "Foreground=#908CAA"
 }
