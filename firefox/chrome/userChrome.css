@@ -359,58 +359,73 @@ html,
     background: transparent !important;
 }
 
+#input {
+    background-color: var(--uc-base-colour) !important;
+    border: 1px solid var(--organizer-outline-color) !important;
+}
+
 /* titlebar buttons */
 .titlebar-buttonbox {
-    height: 26px;
+    height: 26px !important;
+    margin-right: -4px !important;
 }
 .titlebar-button {
-    --uc-caption-color: rgb(156, 207, 216);
-    --uc-caption-color-hover: rgb(156, 207, 216, 0.3);
+    content: "" !important;
+    padding: 8px 23px !important;
+    background-color: transparent !important;
+    list-style-image: none !important;
 }
-.titlebar-min {
+.titlebar-button > .toolbarbutton-icon {
+    display: none !important;
+}
+.titlebar-button::before {
+    font-family: "Segoe Fluent Icons" !important;
+    font-weight: bold !important;
+    font-size: 6px !important;
+    -webkit-text-stroke: 1px !important;
+    color: transparent !important;
+    background: var(--uc-caption-color, currentColor) !important;
+    outline: 2px solid transparent !important;
+    outline-offset: -1px !important;
+    border-radius: 100% !important;
+    height: 14px !important;
+    width: 14px !important;
+    position: absolute !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    transition: 0.3s all !important;
+}
+.titlebar-button:hover::before {
+    color: var(--uc-caption-color, currentColor) !important;
+    background: var(--uc-caption-color-hover, currentColor) !important;
+    outline: 2px solid var(--uc-caption-color, currentColor) !important;
+}
+.titlebar-button:active::before {
+    color: transparent !important;
+}
+.titlebar-min::before {
     --uc-caption-color: rgb(246, 193, 119);
     --uc-caption-color-hover: rgba(246, 193, 119, 0.3);
 }
-.titlebar-close {
+.titlebar-max::before,
+.titlebar-restore::before {
+    --uc-caption-color: rgb(156, 207, 216);
+    --uc-caption-color-hover: rgb(156, 207, 216, 0.3);
+}
+.titlebar-close::before {
     --uc-caption-color: rgb(235, 188, 186);
     --uc-caption-color-hover: rgba(235, 188, 186, 0.3);
 }
-.titlebar-button:hover:before {
-    font-family: "Segoe Fluent Icons" !important;
-    font-weight: bold;
-    font-size: 6px;
-    -webkit-text-stroke: 2px;
+.titlebar-min::before {
+    content: "\f7af" !important;
 }
-.titlebar-button:hover:before {
-    color: var(--uc-caption-color, currentColor);
-    content: "\ea3a";
-    position: absolute;
+.titlebar-max::before,
+.titlebar-restore::before {
+    content: "\ea3a" !important;
 }
-.titlebar-min:hover:before {
-    content: "\f7af";
-    position: absolute;
-}
-.titlebar-close:hover:before {
-    content: "\e711";
-    position: absolute;
-}
-.titlebar-button:hover > .toolbarbutton-icon {
-    background: var(--uc-caption-color-hover, currentColor) !important;
-    outline: 2px solid var(--uc-caption-color, currentColor);
-    outline-offset: -1px;
-}
-.titlebar-button {
-    background: transparent !important;
-    padding-inline: 17px !important;
-}
-.titlebar-close {
-    padding-right: 14px !important;
-}
-.titlebar-button > .toolbarbutton-icon {
-    list-style-image: none;
-    border-radius: 100%;
-    background: var(--uc-caption-color, currentColor) !important;
-    scale: 1.1;
+.titlebar-close::before {
+    content: "\e711" !important;
 }
 
 /* context menu */
