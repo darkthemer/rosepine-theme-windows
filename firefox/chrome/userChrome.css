@@ -75,11 +75,6 @@ html,
     background-color: var(--uc-base-colour) !important;
 }
 
-/* move menubar to left-most - cascade fix */
-#toolbar-menubar {
-    margin-left: -35vw;
-}
-
 #navigator-toolbox {
     /* add padding to main bar */
     padding: 3px !important;
