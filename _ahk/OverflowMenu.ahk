@@ -9,24 +9,8 @@ SetWorkingDir %A_ScriptDir%
 
 DetectHiddenWindows, On
 
-!b::
+#b::
 
-; If (WinActive, ahk_class NotifyIconOverflowWindow) {
-
-; 	WinHide, ahk_class NotifyIconOverflowWindow
-
-; }
-; Else
-
-ControlClick, Button2, ahk_class Shell_TrayWnd
-
-WinGetPos, xtemp, ytemp,,, ahk_class NotifyIconOverflowWindow
-; MouseGetPos, X, Y
-
-xpos:=xtemp+9
-ypos:=ytemp+18
-
-WinMove, ahk_class NotifyIconOverflowWindow, , %xpos%, %ypos%
-WinActivate, ahk_class NotifyIconOverflowWindow
+Send #b{Enter}
 
 Return
