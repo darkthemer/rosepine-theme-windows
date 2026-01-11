@@ -362,11 +362,10 @@ html,
 /* titlebar buttons */
 .titlebar-buttonbox {
     height: 26px !important;
-    margin-right: -4px !important;
 }
 .titlebar-button {
     content: "" !important;
-    padding: 8px 23px !important;
+    padding: 8px 20px !important;
     background-color: transparent !important;
     list-style-image: none !important;
 }
