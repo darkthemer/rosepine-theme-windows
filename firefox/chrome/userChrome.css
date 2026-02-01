@@ -37,7 +37,7 @@
 @import "includes/cascade-tabs.css";
 
 :root {
-    --uc-popup-border-colour: rgb(110, 106, 134);
+    --uc-popup-border-colour: rgba(235, 188, 186);
     --uc-seperator-colour: rgb(57, 53, 82);
     --uc-tab-colour: rgb(33, 32, 46);
 
@@ -470,4 +470,9 @@ menu:where([_moz-menuactive="true"][disabled="true"]),
 menuitem:where([_moz-menuactive="true"][disabled="true"]) {
     background-color: var(--uc-base-colour) !important;
     border-radius: 3px;
+}
+
+/* tab preview */
+.tab-preview-thumbnail-container {
+    border-top: 1px solid var(--uc-seperator-colour) !important;
 }

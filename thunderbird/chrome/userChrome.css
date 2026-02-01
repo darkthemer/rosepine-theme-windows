@@ -144,7 +144,7 @@
     /* context menu */
     --arrowpanel-background: rgb(25, 23, 36) !important;
     --arrowpanel-color: rgb(251, 251, 254) !important;
-    --arrowpanel-border-color: rgb(110, 106, 134) !important;
+    --arrowpanel-border-color: rgba(235, 188, 186) !important;
     --arrowpanel-dimmed: rgb(38, 35, 58) !important;
     --arrowpanel-dimmed-further: rgb(38, 35, 58) !important;
     --panel-item-hover-bgcolor: rgb(38, 35, 58) !important;
