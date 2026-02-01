@@ -1,5 +1,7 @@
-# link to original image:
+# link to original images:
 
-https://twitter.com/tommydevoid/status/1605971692135649280?s=20
+[such-sweet-poetry](https://www.instagram.com/p/DCFp9usvG_4/?img_index=10)
 
-using gimp, i tried my best to recolor it
+[its-stuffy-in-here](https://www.instagram.com/p/C8heNm3xgnS/)
+
+using gimp, i tried my best to recolor and/or extend these
