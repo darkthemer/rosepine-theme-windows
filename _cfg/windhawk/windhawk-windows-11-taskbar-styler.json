@@ -19,7 +19,7 @@
   "controlStyles[4].styles[0]": "Background=#191724",
   "controlStyles[4].styles[1]": "BorderBrush=#EBBCBA",
   "controlStyles[4].styles[2]": "CornerRadius=6",
-  "controlStyles[5].target": "Windows.UI.Xaml.Controls.ListViewItem",
+  "controlStyles[5].target": "Windows.UI.Xaml.Controls.Border#BackgroundBorder",
   "controlStyles[5].styles[0]": "FocusVisualPrimaryThickness=3",
   "controlStyles[5].styles[1]": "FocusVisualSecondaryThickness=7",
   "controlStyles[5].styles[2]": "FocusVisualPrimaryBrush=#26233A",
@@ -48,5 +48,8 @@
   "controlStyles[11].target": "Windows.UI.Xaml.Controls.Grid#Root@CommonStates > Windows.UI.Xaml.Controls.Border#BackgroundBorder",
   "controlStyles[11].styles[0]": "Background@Normal=transparent",
   "controlStyles[11].styles[1]": "Background@PointerOver=#1F1D2E",
-  "controlStyles[11].styles[2]": "Background@Pressed=#1F1D2E"
+  "controlStyles[11].styles[2]": "Background@Pressed=#1F1D2E",
+  "styleConstants[0]": "",
+  "resourceVariables[0].variableKey": "",
+  "resourceVariables[0].value": ""
 }
