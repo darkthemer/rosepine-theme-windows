@@ -84,6 +84,10 @@
 
 ![](__screenshots/playnite.png)
 
+### qbittorrent
+
+![](__screenshots/qbittorrent.png)
+
 ### sharex
 
 ![](__screenshots/sharex.png)
