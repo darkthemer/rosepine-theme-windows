@@ -8,6 +8,8 @@ SetWorkingDir %A_ScriptDir%
 #SingleInstance Force
 #NoTrayIcon
 
+DetectHiddenWindows, On
+
 LWin & vk07::
 KeyWait, LWin
 if (A_PriorKey="LWin")
@@ -19,6 +21,6 @@ if (A_PriorKey="LWin")
 Send {Alt down}{Space}{Alt up}
 return
 
-; Alt & Tab::
-; Send {Alt down}{Space}{Alt up}w
-; return
+#b::
+Send #b{Enter}
+return
