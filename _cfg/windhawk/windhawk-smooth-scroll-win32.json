@@ -1,0 +1,7 @@
+{
+    "springConstant": 800,
+    "dampingX10": 12,
+    "scrollMultiplierX10": 20,
+    "animationIntervalMs": 8,
+    "vsync": 1
+}
