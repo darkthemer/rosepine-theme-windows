@@ -1,5 +1,21 @@
 :host,
 :root {
+    --primary: #ebbcba !important;
+    --folder-color-inbox: #286983 !important;
+    --folder-color-draft: #c4a7e7 !important;
+    --folder-color-sent: #9ccfd8 !important;
+    --folder-color-archive: #f6c177 !important;
+    --folder-color-spam: #eb6f92 !important;
+    --folder-color-trash: #908caa !important;
+    --folder-color-template: #908caa !important;
+    --folder-color-newsletter: #908caa !important;
+    --folder-color-rss: #ebbcba !important;
+    --folder-color-outbox: #9ccfd8 !important;
+    --folder-color-folder: #f6c177 !important;
+    --folder-color-folder-filter: #ebbcba !important;
+    --folder-color-folder-rss: #ebbcba !important;
+    --folder-color-warning: #f6c177 !important;
+
     --color-red-10: #eb6f92 !important;
     --color-red-20: #eb6f92 !important;
     --color-red-30: #eb6f92 !important;
