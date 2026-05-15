@@ -78,12 +78,6 @@
 
 ![](__screenshots/obsidian.png)
 
-### playnite
-
-#### unmaintained
-
-![](__screenshots/playnite.png)
-
 ### qbittorrent
 
 ![](__screenshots/qbittorrent.png)
