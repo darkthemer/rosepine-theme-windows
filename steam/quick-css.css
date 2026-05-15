@@ -1,0 +1,51 @@
+/* Quick CSS file created by Millennium */
+/* override colors */
+:root {
+    --color-light: #26233a !important;
+    --color-dark: #1f1d2e !important;
+    --color-darker: #191724 !important;
+    --color-darkest: #191724 !important;
+    --scrollbar: #1f1d2e !important;
+    --black: #191724 !important;
+    --black-ish: #19172400 !important;
+    --realblack: #191724 !important;
+    --blacker-ish: #191724 !important;
+    --blacker: #191724 !important;
+    --lightblack: #191724 !important;
+    --darkergrey: #26233a !important;
+    --bedarkgrey: #1f1d2e !important;
+    --thegrey: #191724 !important;
+    --begrey: #26233a !important;
+    --littlegrey: #6E6A86 !important;
+    --darkgrey: #191724 !important;
+    --grey: #1f1d2e !important;
+    --lightgrey: #26233a !important;
+    --lightergrey: #26233a !important;
+    --grey-ish: #26233a !important;
+    --darkerwhite: #6e6a86 !important;
+    --darkwhite: #908caa !important;
+    --white: #e0def4 !important;
+    --darkblue: #d7827e !important;
+    --blue: #ebbcba !important;
+    --blu: #ebbcba !important;
+    --brightblue: #ebbcba !important;
+    --blue-ish: #ea9a97 !important;
+    --blue-er: #ea9a97 !important;
+    --lightblue: #ebbcba !important;
+    --darkgreen: #286983 !important;
+    --green: #9ccfd8 !important;
+    --ingame: #286983 !important;
+    --online: #9ccfd8 !important;
+    --offline: #6e6a86 !important;
+    --gold: #f6c177 !important;
+    --bronze: #ebbcba !important;
+    --purple: #c4a7e7 !important;
+    --pink: #ebbcba !important;
+    --red: #eb6f92 !important;
+    --orange: #d7827e !important;
+    --yellow: #ea9d34 !important;
+}
+/* titlebar buttons */
+.title-area-icon * {
+    display: none !important;
+}
