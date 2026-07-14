@@ -40,6 +40,7 @@
   "controlStyles[16].styles[0]": "Background:=#191724",
   "controlStyles[17].target": "Border#ToastBackgroundBorder2",
   "controlStyles[17].styles[0]": "Background:=#191724",
+  "controlStyles[17].styles[1]": "BorderBrush:=#EBBCBA",
   "controlStyles[18].target": "Button#ClearAll > ContentPresenter",
   "controlStyles[18].styles[0]": "Background:=#21202E",
   "controlStyles[19].target": "Windows.UI.Xaml.Controls.Primitives.ToggleButton#DoNotDisturbButton > Grid > ContentPresenter",
