@@ -1,0 +1,20 @@
+{
+  "normal_window_border.enable_custom_border": 1,
+  "normal_window_border.color": "#FFEBBCBA",
+  "normal_window_border.dark_color": "#FFEBBCBA",
+  "normal_window_border.enable_unfocused": 1,
+  "normal_window_border.unfocused_color": "#FF26233A",
+  "normal_window_border.unfocused_dark_color": "#FF26233A",
+  "maximized_window_border.show_custom_border": 0,
+  "maximized_window_border.color": "#FFEBBCBA",
+  "maximized_window_border.dark_color": "#FFEBBCBA",
+  "maximized_window_border.enable_unfocused": 0,
+  "maximized_window_border.unfocused_color": "#FF26233A",
+  "maximized_window_border.unfocused_dark_color": "#FF26233A",
+  "context_menu_border.enable_custom_border": 1,
+  "context_menu_border.color": "#FF6E6A86",
+  "context_menu_border.dark_color": "#FF6E6A86",
+  "tooltip_border.enable_custom_border": 1,
+  "tooltip_border.color": "#FF26233A",
+  "tooltip_border.dark_color": "#FF26233A"
+}

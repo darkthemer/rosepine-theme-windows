@@ -1,0 +1,11 @@
+{
+  "duration_ms": 300,
+  "open_animation": 1,
+  "launch_animation": 1,
+  "multi_monitor": 0,
+  "unhide_taskbar": 0,
+  "unhide_duration_ms": 450,
+  "engine": "modern",
+  "tile_count": 35,
+  "excluded_programs[0]": ""
+}
