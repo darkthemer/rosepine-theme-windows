@@ -2,6 +2,24 @@
   color: var(--uc-color-muted) !important;
 }
 
+.tabbrowser-tab[fadein]:not([selected]):not([pinned]) .tab-icon-image {
+    filter: contrast(0.25) opacity(0.25);
+}
+
+#statuspanel #statuspanel-label {
+    appearance: none !important;
+    background-color: var(--uc-color-base) !important;
+    border: 1px solid var(--uc-color-context-border) !important;
+    color: var(--uc-color-text) !important;
+}
+
+tooltip {
+    appearance: none !important;
+    background-color: var(--uc-color-base) !important;
+    border: 1px solid var(--uc-color-context-border) !important;
+    color: var(--uc-color-text) !important;
+}
+
 :root {
   --toolbarbutton-icon-fill: var(--uc-color-muted) !important;
 }
@@ -144,7 +162,7 @@
   /* Corner radius for the surfaces FoxOne owns (tab-group chips, library
      search field) and the value handed to every surface the rounded-corners
      toggle below can round. */
-  --uc-border-radius: 8px;
+  --uc-border-radius: 4px;
 
   /* Rounded corners (0 = FoxOne's square edges, 1 = every surface FoxOne
      squares takes --uc-border-radius instead). Details in the derived block
@@ -996,7 +1014,7 @@ sidebar-main,
 }
 
 #statuspanel #statuspanel-label {
-  border: none !important;
+  /* border: none !important; */
   border-radius: var(--uc-radius-surface) !important;
   margin: 0 0 var(--uc-status-panel-spacing) var(--uc-status-panel-spacing) !important;
 }
