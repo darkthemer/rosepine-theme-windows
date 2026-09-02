@@ -1,142 +1,6 @@
-.tabbrowser-tab {
-  color: var(--uc-color-muted) !important;
-}
-
-.tabbrowser-tab[fadein]:not([selected]):not([pinned]) .tab-icon-image {
-    filter: contrast(0.25) opacity(0.25);
-}
-
-#statuspanel #statuspanel-label {
-    appearance: none !important;
-    background-color: var(--uc-color-base) !important;
-    border: 1px solid var(--uc-color-context-border) !important;
-    color: var(--uc-color-text) !important;
-}
-
-tooltip {
-    appearance: none !important;
-    background-color: var(--uc-color-base) !important;
-    border: 1px solid var(--uc-color-context-border) !important;
-    color: var(--uc-color-text) !important;
-}
-
-:root {
-  --toolbarbutton-icon-fill: var(--uc-color-muted) !important;
-}
-
-:root:not([lwtheme]) :is(panel, menupopup):not(#DateTimePickerPanel, .autoscroller) {
-  --panel-border-color: var(--uc-color-context-border) !important;
-}
-
-/* places or library window */
-@-moz-document url(chrome://browser/content/places/places.xhtml)
-{
-    :root {
-        --organizer-color: var(--uc-color-text) !important;
-        --organizer-deemphasized-color: var(--uc-color-muted) !important;
-        --organizer-toolbar-background: var(--uc-color-base) !important;
-        --organizer-pane-background: var(--uc-color-base) !important;
-        --organizer-content-background: var(--uc-color-base) !important;
-        --organizer-hover-background: var(--uc-color-surface) !important;
-        --organizer-selected-background: var(--uc-color-hover) !important;
-        --organizer-outline-color: var(--uc-color-surface) !important;
-        --organizer-toolbar-field-background: var(--uc-color-base) !important;
-        --organizer-toolbar-field-background-focused: var(
-            --uc-color-surface
-        ) !important;
-        --organizer-border-color: var(--uc-color-context-border) !important;
-        --default-focusring: none !important;
-        --scrollbar-color: var(--uc-color-surface) !important;
-        --organizer-focus-selected-background: var(
-            --uc-color-surface
-        ) !important;
-        --organizer-focus-selected-color: var(--uc-color-accent) !important;
-    }
-    treechildren,
-    richlistbox,
-    richlistitem {
-        border: 2px solid transparent !important;
-        border-radius: 6px !important;
-        padding: 4px !important;
-        border-radius: 2px !important;
-    }
-    treechildren::-moz-tree-row(selected),
-    richlistbox:where(:focus) > richlistitem[selected="true"],
-    richlistitem[selected="true"] {
-        background-color: var(--organizer-selected-background) !important;
-        border-radius: 6px !important;
-    }
-    treechildren::-moz-tree-row(selected):hover,
-    richlistbox:where(:focus) > richlistitem[selected="true"]:hover,
-    richlistitem[selected="true"]:hover {
-        background-color: var(--organizer-selected-background) !important;
-        border-radius: 6px !important;
-    }
-    treechildren::-moz-tree-row(hover),
-    richlistitem:hover {
-        background-color: var(--organizer-hover-background) !important;
-        border: 2px solid var(--organizer-focus-selected-color) !important;
-        border-radius: 6px !important;
-    }
-    treechildren::-moz-tree-cell-text(selected),
-    richlistbox:where(:focus) > richlistitem[selected="true"],
-    richlistitem[selected="true"] {
-        color: var(--organizer-focus-selected-color) !important;
-    }
-    treechildren::-moz-tree-cell-text(hover),
-    richlistitem:hover {
-        color: var(--organizer-focus-selected-color) !important;
-    }
-    #downloadsListBox:focus > richlistitem[selected] {
-        background-image: none !important;
-        background-clip: unset !important;
-        border: 2px solid var(--organizer-focus-selected-color) !important;
-        outline: none !important;
-    }
-    #placesView > splitter {
-        border-inline-end: none !important;
-    }
-    treecol,
-    treecolpicker {
-        background-color: var(--organizer-content-background) !important;
-    }
-    treecol,
-    .tree-columnpicker-button {
-        border-inline-start: none !important;
-    }
-    #placeContent {
-        padding: 4px !important;
-        border-radius: 2px !important;
-    }
-    #contentView treecol {
-        box-shadow: none !important;
-    }
-    #placesList {
-        padding: 4px 0 !important;
-    }
-    #placesView {
-        border-top: 0px solid var(--organizer-border-color) !important;
-    }
-    #placesToolbar {
-        border-bottom: 0 !important;
-    }
-    #searchFilter {
-        background-color: transparent !important;
-    }
-    #detailsPane {
-        background-color: var(--organizer-content-background) !important;
-        border-top: 1px solid var(--organizer-outline-color) !important;
-    }
-    #detailsPane input,
-    .expander-up,
-    .expander-down {
-        border: 1px solid var(--organizer-outline-color) !important;
-    }
-}
-
 /*==============================================================================================*
 
-  FoxOne 3.5.3 – A minimalistic one-line Firefox theme
+  FoxOne 3.6.2 – A minimalistic one-line Firefox theme
   Based on Cascade (https://github.com/andreasgrafen/cascade)
   Floating Find Bar and dynamic Bookmarks Bar by LittleFox
   (https://github.com/biglavis/LittleFox)
@@ -151,23 +15,21 @@ tooltip {
 
 :root {
   /* Color palette — change these five values to retheme FoxOne */
-  --uc-color-base:    #191724;   /* main background (toolbar, frame) */
-  --uc-color-surface: #26233A;   /* secondary tone (borders, separators, focused URL field) */
-  --uc-color-accent:  #EBBCBA;   /* accent color (active tab, focus ring) */
-  --uc-color-text:    #E0DEF4;   /* primary text */
-  --uc-color-hover:   #584850;   /* hover / highlight backgrounds */
-  --uc-color-muted: #908CAA;
-  --uc-color-context-border: #6E6A86;
+  --uc-color-base:    #282828;   /* main background (toolbar, frame) */
+  --uc-color-surface: #3c3836;   /* secondary tone (borders, separators, focused URL field) */
+  --uc-color-accent:  #fabd2f;   /* accent color (active tab, focus ring) */
+  --uc-color-text:    #FFFFFF;   /* primary text */
+  --uc-color-hover:   #7c6f64;   /* hover / highlight backgrounds */
 
   /* Corner radius for the surfaces FoxOne owns (tab-group chips, library
      search field) and the value handed to every surface the rounded-corners
      toggle below can round. */
-  --uc-border-radius: 4px;
+  --uc-border-radius: 8px;
 
   /* Rounded corners (0 = FoxOne's square edges, 1 = every surface FoxOne
      squares takes --uc-border-radius instead). Details in the derived block
      right below the config. */
-  --uc-rounded: 1;
+  --uc-rounded: 0;
 
   /* Statuspanel distance from window border (0 = corner). Set to match the
      floating findbar's --findbar-top / --findbar-right (8px): both are CSS px,
@@ -196,7 +58,7 @@ tooltip {
   --uc-tab-min-width: 76px;
 
   /* Inactive tab hover title color (issue #16) */
-  --uc-tab-hover-text: #EBBCBA;
+  --uc-tab-hover-text: #ffda85;
 
   /* Container tab indicator line (0 = bottom edge, 1 = top) */
   --uc-container-line-top: 1;
@@ -211,7 +73,7 @@ tooltip {
      auto-tracks the real window-control box via CSS anchor positioning, so
      this value is used just on macOS and on Firefox builds without anchor
      support. No need to measure it by hand on a modern build. */
-  --uc-window-buttons-width: 0;
+  --uc-window-buttons-width: 138px;
 
   /* Hamburger button width — reserved in tab bar to prevent overlap */
   --uc-hamburger-width: 44px;
@@ -258,7 +120,7 @@ tooltip {
   /* URL-bar clutter icons — fully hide shield (tracking protection), reader
    * mode, translations, bookmark star and add-to-taskbar so they can't be
    * misclicked when aiming for the URL bar (1 = hide all, 0 = default reveal) */
-  --uc-hide-urlbar-buttons: 1;
+  --uc-hide-urlbar-buttons: 0;
 
   /* Pinned toolbar extension icons — hide and reveal on hamburger hover, to
    * keep the one-line layout clean (1 = hide + hover-reveal, 0 = always show) */
@@ -529,7 +391,7 @@ tooltip {
   :root:not([lwtheme]) :is(panel, menupopup):not(#DateTimePickerPanel, .autoscroller) {
     --panel-background-color: var(--uc-color-base) !important;
     --panel-text-color: var(--uc-color-text) !important;
-    /* --panel-border-color: var(--uc-color-surface) !important; */
+    --panel-border-color: var(--uc-color-surface) !important;
     --panel-separator-color: var(--uc-color-surface) !important;
   }
 
@@ -926,6 +788,29 @@ sidebar-main,
     overflow: visible !important;
   }
 
+  /* F11 fullscreen: Firefox collapses every toolbar without
+     fullscreentoolbar="true" (fullscreen-and-pointerlock.css), and
+     #PersonalToolbar is one: visibility: collapse killed the whole overlay,
+     hover and newtab reveal included (issue #44). The overlay costs no
+     space and is opacity-gated anyway, so hand visibility back and let the
+     normal reveal rules decide. DOM fullscreen (videos) stays excluded:
+     there the toolbox itself is collapsed and the bar must not resurface
+     on its own. */
+  :root[inFullscreen]:not([inDOMFullscreen]) #PersonalToolbar {
+    visibility: visible !important;
+  }
+
+  /* Travelling from the urlbar DOWN onto the revealed bar collapsed both:
+     the overlay hangs at top:100%, outside the toolbox border box, and
+     Firefox's fullscreen autohide hides as soon as the pointer leaves that
+     box — via a plain inline margin-top. While the bar is hovered (or one
+     of its folder menus is open), out-shout the inline style and pin the
+     toolbox down; leaving the bar hands control straight back. */
+  :root[inFullscreen]:not([inDOMFullscreen])
+    #navigator-toolbox:has(#PersonalToolbar:is(:hover, :has(toolbarbutton[open]))) {
+    margin-top: 0 !important;
+  }
+
   /* Resting state: out of flow, transparent, zero height. overflow:hidden is
      FoxOne's addition — the collapsed box must clip its own rows, otherwise
      they stay hit-testable over the page and re-trigger the reveal. */
@@ -1014,7 +899,7 @@ sidebar-main,
 }
 
 #statuspanel #statuspanel-label {
-  /* border: none !important; */
+  border: none !important;
   border-radius: var(--uc-radius-surface) !important;
   margin: 0 0 var(--uc-status-panel-spacing) var(--uc-status-panel-spacing) !important;
 }
@@ -1175,8 +1060,18 @@ sidebar-main,
    removes the toolbox 4px top margin (realigns #PanelUI-button, fixed top:0),
    the sidebar side gaps, and the AI-panel height/strip mismatch. */
 .chrome-block {
-  margin: 0 !important;
+  margin-inline: 0 !important;
+  margin-bottom: 0 !important;
   border-radius: 0 !important;
+}
+
+/* margin-top is split out: Firefox's fullscreen autohide hides the toolbox
+   via a plain inline margin-top, and a blanket !important here overrides it.
+   That killed F11 autohide entirely (issue #44). Keep the !important flatten
+   everywhere except on the toolbox while in fullscreen. */
+:root:not([inFullscreen]) .chrome-block,
+.chrome-block:not(#navigator-toolbox) {
+  margin-top: 0 !important;
 }
 
 /* Nova insets the web content on #browser (the flex hbox wrapping sidebar +
@@ -1300,14 +1195,25 @@ sidebar-main,
   border: 1px solid var(--uc-color-surface) !important;
 }
 
-/* Nova extends the breakout by growing .urlbar-background past the toolbar
-   row on every side (--urlbar-background-inset-breakout resolves to -8px:
-   --urlbar-min-height / 2 - --border-radius-xxlarge, 16 - 24), so in the
-   one-line layout the field overhangs into the page content below AND past
-   the window edge above – the breakout box has no visible top edge at all.
-   Pull both edges back until the box sits flush with the row. Fixes the
-   overhang half of issue #31 and the missing top edge (PR #39, NeroWolfe75);
-   the remaining two-Esc collapse is Nova state logic, not geometry.
+/* Nova extends the breakout by growing .urlbar-background past the popover
+   box on every side (--urlbar-background-inset-breakout resolves to -8px:
+   --urlbar-height / 2 - --urlbarview-border-radius, 16 - 24), so the sheet
+   overhangs into the page content below AND past the row edge above. Pull
+   both edges back until the box sits flush with the row. Fixes the overhang
+   half of issue #31 and the missing top edge (PR #39, NeroWolfe75); the
+   remaining two-Esc collapse is Nova state logic, not geometry.
+
+   FF155 turned the urlbar into a manual popover (.urlbar[breakout] is
+   position: absolute, JS measures the row into --urlbar-container-height and
+   [breakout-extend] re-centres the field via margin-block-start), but the
+   background geometry is unchanged: the popover top sits where the field sat
+   in the row, so the same pull still lands the box on the row edge. What DID
+   change is the variable name – --urlbar-min-height is gone, the height now
+   lives in --urlbar-height (urlbar/variables.css). The old name left the
+   calc() unresolvable, top/bottom fell back to auto and the background
+   collapsed to a zero-height sliver: no fill behind the results (the
+   "transparent dropdown") and Nova's 14px breakout shadow smeared along that
+   sliver as a grey bar on the row's top edge.
 
    The [breakout-extend] scope is the fix for issue #37's stray pixel. The
    note that used to sit here – "unconditional is safe, bottom only acts in
@@ -1319,12 +1225,12 @@ sidebar-main,
 
    The pull is derived, not measured: the row is 44px (the height the
    hamburger is pinned to) and the field is centred in it, so the gap between
-   field and row edge is (--urlbar-min-height - 44px) / 2 on either side.
+   field and row edge is (--urlbar-height - 44px) / 2 on either side.
    That resolves to -6px for the normal 32px field and -5px at touch
    density's 34px – one expression that tracks the density by itself. */
 #urlbar[breakout-extend] > .urlbar-background {
-  top: calc((var(--urlbar-min-height) - 44px) / 2) !important;
-  bottom: calc((var(--urlbar-min-height) - 44px) / 2) !important;
+  top: calc((var(--urlbar-height) - 44px) / 2) !important;
+  bottom: calc((var(--urlbar-height) - 44px) / 2) !important;
 }
 
 .urlbarView-row:hover > .urlbarView-row-inner {
@@ -1467,7 +1373,7 @@ sidebar-main,
   --toolbarbutton-icon-fill: var(--uc-tab-hover-text) !important;
 }
 #nav-bar .toolbarbutton-1:is(:active, [open]) {
-  --toolbarbutton-icon-fill: var(--tab-selected-textcolor, var(--uc-color-accent)) !important;
+  --toolbarbutton-icon-fill: var(--tab-selected-textcolor, #fabd2f) !important;
 }
 
 /* The new-tab "+" lives in the tab strip, not #nav-bar, so the rules above
@@ -1483,7 +1389,7 @@ sidebar-main,
   --toolbarbutton-icon-fill: var(--uc-tab-hover-text) !important;
 }
 :is(#tabs-newtab-button, #new-tab-button):is(:active, [open]) {
-  --toolbarbutton-icon-fill: var(--tab-selected-textcolor, var(--uc-color-accent)) !important;
+  --toolbarbutton-icon-fill: var(--tab-selected-textcolor, #fabd2f) !important;
 }
 
 /* Bookmarks-bar overflow chevron (">>"): lives in #PersonalToolbar, so the
@@ -1524,7 +1430,7 @@ sidebar-main,
 }
 #urlbar .urlbar-icon:not(#star-button):is(:active, [open]),
 #urlbar .urlbar-page-action:is(:active, [open]) .urlbar-icon {
-  fill: var(--tab-selected-textcolor, var(--uc-color-accent)) !important;
+  fill: var(--tab-selected-textcolor, #fabd2f) !important;
 }
 
 /* Shield (tracking protection) and the site-info/settings icon use their own
@@ -1540,8 +1446,8 @@ sidebar-main,
 #tracking-protection-icon-container:is(:active, [open]) #tracking-protection-icon,
 #trust-icon-container:is(:active, [open]) #trust-icon,
 #urlbar .identity-box-button:is(:active, [open]) {
-  fill: var(--tab-selected-textcolor, var(--uc-color-accent)) !important;
-  color: var(--tab-selected-textcolor, var(--uc-color-accent)) !important;
+  fill: var(--tab-selected-textcolor, #fabd2f) !important;
+  color: var(--tab-selected-textcolor, #fabd2f) !important;
 }
 
 
@@ -1564,7 +1470,7 @@ sidebar-main,
 }
 #PersonalToolbar .bookmark-item:is(:active, [open]) {
   background-color: transparent !important;
-  color: var(--tab-selected-textcolor, var(--uc-color-accent)) !important;
+  color: var(--tab-selected-textcolor, #fabd2f) !important;
 }
 
 
@@ -1591,8 +1497,8 @@ sidebar-main,
   left: 10px !important;
   right: 10px !important;
   height: 1px !important;
-  background: var(--tab-selected-textcolor, var(--uc-color-accent)) !important;
-  box-shadow: 0 1px 10px 1px var(--tab-selected-textcolor, var(--uc-color-accent)) !important;
+  background: var(--tab-selected-textcolor, #fabd2f) !important;
+  box-shadow: 0 1px 10px 1px var(--tab-selected-textcolor, #fabd2f) !important;
   transform-origin: left !important;
   transform: scaleX(0);
   opacity: 0 !important;
@@ -1622,8 +1528,8 @@ sidebar-main,
   left: 10px !important;
   right: 10px !important;
   height: 1px !important;
-  background: var(--tab-selected-textcolor, var(--uc-color-accent)) !important;
-  box-shadow: 0 1px 10px 1px var(--tab-selected-textcolor, var(--uc-color-accent)) !important;
+  background: var(--tab-selected-textcolor, #fabd2f) !important;
+  box-shadow: 0 1px 10px 1px var(--tab-selected-textcolor, #fabd2f) !important;
   transform-origin: left !important;
   opacity: var(--uc-show-loading-progress) !important;
   animation: uc-progress 2.5s cubic-bezier(0.2, 0.6, 0.4, 1) forwards !important;
@@ -1766,12 +1672,12 @@ sidebar-main {
      --button-background-color-primary, which resolves to the OS accent
      (cyan block). Selection follows the FoxOne model instead: no
      background block, accent text. Rules pierce into the list shadow
-     trees for the same user-sheet reason as above; var(--uc-color-accent) =
+     trees for the same user-sheet reason as above; #fabd2f =
      --uc-color-accent (tokens don't reach here either). */
   sidebar-tab-row[selected],
   sidebar-bookmark-row[selected] {
     background-color: transparent !important;
-    color: var(--uc-color-accent) !important;
+    color: #fabd2f !important;
   }
 }
 
@@ -1780,7 +1686,7 @@ sidebar-main {
    never reaches it. Its search box is a modern moz-input-search though, so
    the same shadow-piercing input rule works; the selection is a XUL tree
    like the Library: FoxOne model via ::-moz-tree pseudos, hardcoded
-   var(--uc-color-accent) = --uc-color-accent (tree pseudos cannot read variables),
+   #fabd2f = --uc-color-accent (tree pseudos cannot read variables),
    dark-gated for the same reason as the Library block. */
 @-moz-document url("chrome://browser/content/places/bookmarksSidebar.xhtml") {
   input[type="search"] {
@@ -1795,13 +1701,13 @@ sidebar-main {
     }
     treechildren::-moz-tree-cell-text(selected),
     treechildren::-moz-tree-cell-text(selected, focus) {
-      color: var(--uc-color-accent) !important;
+      color: #fabd2f !important;
     }
     treechildren::-moz-tree-image(selected),
     treechildren::-moz-tree-image(selected, focus),
     treechildren::-moz-tree-twisty(selected),
     treechildren::-moz-tree-twisty(selected, focus) {
-      fill: var(--uc-color-accent) !important;
+      fill: #fabd2f !important;
     }
   }
 }
@@ -2147,6 +2053,33 @@ sidebar-main {
   }
 }
 
+/* Fullscreen (F11): position:fixed pins the hamburger to the viewport, so it
+   stayed on screen while the toolbox autohid (issue #44). A neutral transform
+   makes the toolbox the containing block for FIXED descendants (position:
+   absolute would grab the nearest positioned ancestor instead, which is
+   #nav-bar and parked the hamburger on the puzzle button), so the button
+   rides the autohide margin. Everything else stays untouched: the window
+   controls ARE shown in fullscreen reveal, so the anchor() from issue #9
+   keeps placing the hamburger beside them. */
+:root[inFullscreen] #navigator-toolbox {
+  transform: translateY(0) !important;
+}
+
+/* The #44 fix left the toolbox in flex flow, so the top-edge reveal (Firefox
+   restoring the autohide margin-top) pushed #browser and the page down with
+   it (issue #46, fix by NeroWolfe75). Take the toolbox out of flow in F11:
+   Firefox still drives margin-top for hide/reveal, but the toolbar now
+   overlays the page instead of displacing it. DOM fullscreen (videos) stays
+   excluded — the toolbox is fully hidden there anyway. */
+:root[inFullscreen]:not([inDOMFullscreen]) #navigator-toolbox {
+  position: fixed !important;
+  top: 0 !important;
+  inset-inline-start: 0 !important;
+  width: 100vw !important;
+  z-index: 9999 !important;
+  overflow: visible !important;
+}
+
 /* ==========================================================================
    TOOLBAR EXTENSION BUTTONS — push to right, next to hamburger.
    Only targets <toolbarbutton> and <toolbaritem> children of #TabsToolbar
@@ -2237,71 +2170,80 @@ sidebar-main {
 }
 
 /* Tabs as size containers, so rules can react to the actual tab width. Only
-   matters once --uc-tab-min-width drops below ~50px (favicon-only tabs):
-   close button and audio button then no longer fit and get clipped at the
-   tab edge. inline-size containment is safe here because tab widths come
-   from the strip's flexbox and the min/max-width clamps, not from content. */
+   matters once --uc-tab-min-width drops below ~50px (favicon-only tabs): the
+   audio button then no longer fits and gives way to the favicon badge below.
+   inline-size containment is safe here because tab widths come from the
+   strip's flexbox and the min/max-width clamps, not from content. */
 .tabbrowser-tab:not([pinned]) {
   container-type: inline-size;
 }
 
-/* tab close button: hidden by default, visible on hover */
+/* Tab close button: an overlay in the tab's top layer, not a flex child.
+   Idea and base code from NeroWolfe75 (comment on 22020af): lifting the X
+   out of the tab's flex row means it exists at EVERY tab width, replacing
+   the old sub-50px hiding and its container query (the container-type above
+   stays for the audio badge). FoxOne twist on the original: the X slides in
+   from the right, vertically centred on the label line, so nothing moves
+   vertically in the one-line layout. */
+.tabbrowser-tab:not([pinned]) .tab-content {
+  /* anchor for the absolutely positioned X */
+  position: relative !important;
+}
 .tabbrowser-tab:not([pinned]) .tab-close-button {
-  display: none !important;
-}
-/* Below 50px the X cannot fit next to the favicon, so it stays hidden even
-   on hover; close via Ctrl+W or the context menu instead. */
-@container (min-width: 50px) {
-  .tabbrowser-tab:not([pinned]):hover .tab-close-button {
-    /* revert (not -moz-inline-block: a removed alias that parses as invalid
-       and gets dropped, leaving the base display:none). revert restores the
-       native close-button display so it reappears on hover. */
-    display: revert !important;
-  }
-}
-
-/* Close X sat ~2px low: it's a 24x24 border-box <image> and the icon scales
-   to its content box. Native 6px padding all round left a 12x12 content box,
-   so the 16px X drew low. Zeroing only the block padding (first attempt)
-   recentred it but made the box 24x12 and stretched the X vertically. The
-   icon must keep a SQUARE content box to stay proportional: 4px symmetric
-   padding gives a 16x16 content box — the 16px X fits exactly, unstretched,
-   and centres on the tab-label line (box centre is already at centerY 22). */
-.tab-close-button {
-  padding: 4px !important;
-  /* The icon won't scale below its 16px intrinsic size via padding (it
-     overflows instead), and 16px reads too large. transform: scale shrinks
-     the rendered X around its centre without touching the layout box, so the
-     24x24 click target and the centerY-22 alignment are preserved. Tune the
-     factor for size: 0.75 ≈ 12px.
-     Nova shifted the tab-label line down ~1px, leaving the X reading 1px high
-     against the label. translateY nudges the rendered icon back onto the line.
-     Order matters: translateY is the LEFTMOST transform so it applies in
-     screen space at a full 1px — placed after scale it would be scaled to
-     0.75px. Pure visual shift; the 24x24 layout/click box is untouched. */
-  transform: translateY(1px) scale(0.75) !important;
-  /* Firefox 154 (toolkit close-icon.css) switched the X to color: inherit +
-     fill: currentColor, so it wears the tab's text colour: accent on the
-     selected tab before the pointer ever reaches it. Pin the rest state to
-     the base text colour instead; the hover/active rules below re-add colour
-     as the interaction cue. */
+  /* revert (not -moz-inline-block: a removed alias that parses as invalid
+     and gets dropped): restores the native close-button display. */
+  display: revert !important;
+  position: absolute !important;
+  inset-inline-end: 3px !important;
+  /* Box centred on the line, then 1px down: Nova's label line sits ~1px
+     below the geometric centre (same nudge the pre-overlay X needed). */
+  inset-block-start: calc(50% - 9px) !important;
+  z-index: 100 !important;
+  /* 20px box, 2px padding -> 16x16 content box: the 16px icon fits exactly,
+     unstretched (it won't scale below its intrinsic size via padding, it
+     overflows instead). scale(0.75) in the transform below renders the glyph
+     at 12px, the size the pre-overlay X used, and the plate at 15px, leaving
+     ~1.5px of air around the glyph. */
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px !important;
+  min-height: 20px !important;
+  margin: 0 !important;
+  padding: 2px !important;
+  /* The plate is a constant surface chip in every state; the glyph's colour
+     change below is the only interaction cue (issue #16). Rest state pins
+     the base text colour: since 154 the X wears the tab's text colour via
+     fill: currentColor, which would read accent on the selected tab. The
+     outline kill drops 154's toolbarbutton focus/hover outline. */
+  background-color: var(--uc-color-surface) !important;
   color: var(--uc-color-text) !important;
-  /* 154 also paints a currentColor chip behind the hovered X, rounded by the
-     Nova tab radius into a circle, plus a toolbarbutton outline. Colour is
-     the only interaction signal in FoxOne (issue #16): kill both. The chip
-     is set in the :hover/:hover:active states, so clear it unconditionally
-     here where !important wins regardless of state. */
-  background-color: transparent !important;
+  border: none !important;
+  border-radius: 2px !important;
   outline: none !important;
+  /* Rest: parked outside the right tab edge, invisible; slides in on tab
+     hover. scale is part of the transform list so it must repeat in every
+     state that sets transform. */
+  transform: translateX(200%) scale(0.75) !important;
+  opacity: 0 !important;
+  transition:
+    transform 140ms ease-out,
+    opacity 100ms ease-out !important;
+  flex: none !important;
+  overflow: hidden !important;
+}
+.tabbrowser-tab:not([pinned]):hover .tab-close-button {
+  opacity: 0.9 !important;
+  transform: translateX(0) scale(0.75) !important;
 }
 /* Same three-step colour model as the toolbar icons (issue #16): rest white
-   (above), hover the X itself hover-yellow, press it accent. fill is
+   (above), hover the X itself hover-yellow, press it amber. fill is
    currentColor since 154, so color alone recolours the glyph. */
-.tab-close-button:hover {
+.tabbrowser-tab:not([pinned]) .tab-close-button:hover {
+  opacity: 1 !important;
   color: var(--uc-tab-hover-text) !important;
 }
-.tab-close-button:hover:active {
-  color: var(--tab-selected-textcolor, var(--uc-color-accent)) !important;
+.tabbrowser-tab:not([pinned]) .tab-close-button:hover:active {
+  color: var(--tab-selected-textcolor, #fabd2f) !important;
 }
 
 /* adaptive tab width */
@@ -2324,8 +2266,8 @@ sidebar-main {
   left: 10px !important;
   right: 10px !important;
   height: 1px !important;
-  background: var(--tab-selected-textcolor, var(--uc-color-accent)) !important;
-  box-shadow: 0 -1px 10px 1px var(--tab-selected-textcolor, var(--uc-color-accent)) !important;
+  background: var(--tab-selected-textcolor, #fabd2f) !important;
+  box-shadow: 0 -1px 10px 1px var(--tab-selected-textcolor, #fabd2f) !important;
 }
 
 /* container tabs indicator (position toggle in CONFIG)
@@ -2557,6 +2499,15 @@ sidebar-main {
 
 findbar {
   position: absolute !important;
+  /* FF155 turned .browserContainer into a CSS grid with a dedicated
+     "findbar" row at the very bottom (content-area.css). An absolutely
+     positioned grid item takes its containing block from its grid area, not
+     from the container, so top: 8px suddenly measured from a zero-height row
+     below the page and the bar landed outside the clipped container:
+     invisible. grid-area: auto drops the placement, and per spec an auto
+     placement hands the containing block back to the container's padding
+     box, which is the pre-155 geometry. */
+  grid-area: auto !important;
   top: var(--findbar-top) !important;
   left: var(--findbar-right) !important;
   right: var(--findbar-right) !important;
@@ -2791,7 +2742,7 @@ html[id^="taskbartab"] #unified-extensions-button {
    Both panes (folder tree left, item list right) are XUL <tree>s and are
    only styleable through ::-moz-tree-* pseudo-elements. Those CANNOT read
    CSS variables — the palette values are hardcoded here on purpose:
-   var(--uc-color-accent) = --uc-color-accent. Retheming means touching this block too.
+   #fabd2f = --uc-color-accent. Retheming means touching this block too.
    Dark-scheme gated like the COLOR THEME block: amber text without a
    highlight needs the dark surface.
 
@@ -2812,14 +2763,14 @@ html[id^="taskbartab"] #unified-extensions-button {
     }
     treechildren::-moz-tree-cell-text(selected),
     treechildren::-moz-tree-cell-text(selected, focus) {
-      color: var(--uc-color-accent) !important;
+      color: #fabd2f !important;
     }
     /* Folder/page icons and twisties are context-fill — follow the text. */
     treechildren::-moz-tree-image(selected),
     treechildren::-moz-tree-image(selected, focus),
     treechildren::-moz-tree-twisty(selected),
     treechildren::-moz-tree-twisty(selected, focus) {
-      fill: var(--uc-color-accent) !important;
+      fill: #fabd2f !important;
     }
 
     /* Keyboard-cursor dashed ring: redundant next to the amber text
@@ -2835,7 +2786,7 @@ html[id^="taskbartab"] #unified-extensions-button {
     /* Hover — accent frame, no fill. */
     treechildren::-moz-tree-row(hover) {
       background-color: transparent !important;
-      border: 1px solid var(--uc-color-accent) !important;
+      border: 1px solid #fabd2f !important;
     }
 
     /* ------------------------------------------------------------------
@@ -3055,4 +3006,280 @@ html[id^="taskbartab"] #unified-extensions-button {
     animation: none !important;
     transform: scaleX(1) !important;
   }
+}
+
+/* ==========================================================================
+   CONFIG
+   ========================================================================== */
+
+:root {
+  /* Color palette — change these five values to retheme FoxOne */
+  --uc-color-base:    #191724;   /* main background (toolbar, frame) */
+  --uc-color-surface: #26233A;   /* secondary tone (borders, separators, focused URL field) */
+  --uc-color-accent:  #EBBCBA;   /* accent color (active tab, focus ring) */
+  --uc-color-text:    #E0DEF4;   /* primary text */
+  --uc-color-hover:   #584850;   /* hover / highlight backgrounds */
+  --uc-color-muted: #908CAA;
+  --uc-color-context-border: #6E6A86;
+
+  /* Corner radius for the surfaces FoxOne owns (tab-group chips, library
+     search field) and the value handed to every surface the rounded-corners
+     toggle below can round. */
+  --uc-border-radius: 4px;
+
+  /* Rounded corners (0 = FoxOne's square edges, 1 = every surface FoxOne
+     squares takes --uc-border-radius instead). Details in the derived block
+     right below the config. */
+  --uc-rounded: 1;
+
+  /* Statuspanel distance from window border (0 = corner). Set to match the
+     floating findbar's --findbar-top / --findbar-right (8px): both are CSS px,
+     so they render at the same real inset under any display scaling. */
+  --uc-status-panel-spacing: 8px;
+
+  /* URL Bar width (min applied normally, max on focus). The px ceiling caps
+     growth on ultrawide/4K, where bare vw scales to absurd widths (issue #6).
+     Caps engage from ~1800px CSS-px viewport; below that the vw value wins. */
+  --uc-urlbar-min-width: min(35vw, 630px);
+  --uc-urlbar-max-width: min(50vw, 900px);
+
+  /* Dynamic tab widths. The inactive ceiling is intentionally lower than the
+     active one: inactive tabs cap sooner, freeing strip space for the active
+     tab to grow visibly larger. Raise it back toward the active ceiling and the
+     active-tab size advantage only appears at very wide strips (issue #7).
+
+     These are the narrow-window defaults (< 1710px). At and above 1710px
+     (~2/3 of WQHD) the ceilings are widened back to the pre-#7 pair so the
+     strip distributes evenly and tabs read uniformly again — see the
+     min-width: 1710px override below the :root block. */
+  --uc-active-tab-width: clamp(100px, 30vw, 190px);
+  --uc-inactive-tab-width: clamp(100px, 20vw, 120px);
+  /* Tab min width (opt-in): 76px = Firefox default (browser.tabs.tabMinWidth).
+     Lower it (e.g. 36px) to allow narrower tabs / fit more before overflow scroll */
+  --uc-tab-min-width: 76px;
+
+  /* Inactive tab hover title color (issue #16) */
+  --uc-tab-hover-text: #EBBCBA;
+
+  /* Container tab indicator line (0 = bottom edge, 1 = top) */
+  --uc-container-line-top: 1;
+
+  /* Context menu: "Open Link in Split View" (0 = hidden, 1 = visible) */
+  --uc-show-context-splitview: 0;
+
+  /* All-tabs button (0 = hidden, 1 = visible) */
+  --uc-show-all-tabs-button: 0;
+
+  /* Windows control button width. Fallback only: on non-macOS the hamburger
+     auto-tracks the real window-control box via CSS anchor positioning, so
+     this value is used just on macOS and on Firefox builds without anchor
+     support. No need to measure it by hand on a modern build. */
+  --uc-window-buttons-width: 0;
+
+  /* Hamburger button width — reserved in tab bar to prevent overlap */
+  --uc-hamburger-width: 44px;
+
+  /* Extra toolbar button width (extensions, uBlock etc.) */
+  --uc-toolbar-button-width: 36px;
+  
+  /* Standalone new-tab button width (set to 0 if removed from toolbar) */
+  --uc-newtab-width: 36px;
+
+  /* Drag space — grab zone after the tabs for moving the window. Kept small;
+     it is functional space, not just a gap, so don't drop it to 0. */
+  --uc-drag-space: 20px;
+
+  /* Findbar — floating search bar */
+  --findbar-top: 8px;
+  --findbar-right: 8px;
+  --findbar-width: 360px;
+
+  /* Show/Hide Find Bar Options
+   * Show: 1
+   * Hide: 0
+   */
+  --show-highlight-all:    1;
+  --show-match-case:       1;
+  --show-match-diacritics: 1;
+  --show-whole-words:      1;
+
+  /* Find Bar Options Position */
+  --highlight-all-position:    0;
+  --match-case-position:       1;
+  --match-diacritics-position: 2;
+  --whole-words-position:      3;
+
+  /* Tab loading progress bar (1 = show, 0 = hide) */
+  --uc-show-loading-progress: 0;
+
+  /* Navigation buttons — auto-hide with hover reveal (0 = always show, 1 = reveal with hover and focus, 2 = reveal with hover) */
+  --uc-autohide-nav-buttons: 0;
+
+  /* Navigation buttons — remove back/forward/reload for mouse button and shortcut users (1 = hide, 0 = show) */
+  --uc-hide-nav-buttons: 0;
+
+  /* URL-bar clutter icons — fully hide shield (tracking protection), reader
+   * mode, translations, bookmark star and add-to-taskbar so they can't be
+   * misclicked when aiming for the URL bar (1 = hide all, 0 = default reveal) */
+  --uc-hide-urlbar-buttons: 1;
+
+  /* Pinned toolbar extension icons — hide and reveal on hamburger hover, to
+   * keep the one-line layout clean (1 = hide + hover-reveal, 0 = always show) */
+  --uc-hide-extension-icons: 1;
+
+  /* Bookmarks bar — float it out of the layout and reveal it on URL-bar hover
+   * (1 = dynamic overlay, 0 = static row that keeps its own line).
+   * Only bites with Firefox' bookmarks toolbar set to "Always show": under
+   * "Never show" there is nothing to reveal, and "Only on New Tab" leaves
+   * Firefox' own collapse in charge everywhere else. */
+  --uc-dynamic-bookmarks: 1;
+
+  /* Delay before the URL-bar hover reveals the bar, and before it hides again
+   * once the pointer leaves. The hide delay is the grace period for travelling
+   * from the URL bar down onto the bookmarks. */
+  --uc-dynamic-bookmarks-hover-delay: 450ms;
+  --uc-dynamic-bookmarks-hide-delay: 50ms;
+
+  /* Bookmarks bar on fresh tabs — keep the dynamic bar revealed while the
+   * active tab shows no page yet (new tab, home), no hover needed
+   * (1 = show on fresh tabs, 0 = hover only). Ignored while
+   * --uc-dynamic-bookmarks is 0. */
+  --uc-dynamic-bookmarks-newtab: 1;
+
+}
+
+.tabbrowser-tab {
+  color: var(--uc-color-muted) !important;
+}
+
+.tabbrowser-tab[fadein]:not([selected]):not([pinned]) .tab-icon-image {
+    filter: contrast(0.25) opacity(0.25);
+}
+
+#statuspanel #statuspanel-label {
+    appearance: none !important;
+    background-color: var(--uc-color-base) !important;
+    border: 1px solid var(--uc-color-context-border) !important;
+    color: var(--uc-color-text) !important;
+}
+
+tooltip {
+    appearance: none !important;
+    background-color: var(--uc-color-base) !important;
+    border: 1px solid var(--uc-color-context-border) !important;
+    color: var(--uc-color-text) !important;
+}
+
+:root {
+  --toolbarbutton-icon-fill: var(--uc-color-muted) !important;
+}
+
+:root:not([lwtheme]) :is(panel, menupopup):not(#DateTimePickerPanel, .autoscroller) {
+  --panel-border-color: var(--uc-color-context-border) !important;
+}
+
+/* places or library window */
+@-moz-document url(chrome://browser/content/places/places.xhtml)
+{
+    :root {
+        --organizer-color: var(--uc-color-text) !important;
+        --organizer-deemphasized-color: var(--uc-color-muted) !important;
+        --organizer-toolbar-background: var(--uc-color-base) !important;
+        --organizer-pane-background: var(--uc-color-base) !important;
+        --organizer-content-background: var(--uc-color-base) !important;
+        --organizer-hover-background: var(--uc-color-surface) !important;
+        --organizer-selected-background: var(--uc-color-hover) !important;
+        --organizer-outline-color: var(--uc-color-surface) !important;
+        --organizer-toolbar-field-background: var(--uc-color-base) !important;
+        --organizer-toolbar-field-background-focused: var(
+            --uc-color-surface
+        ) !important;
+        --organizer-border-color: var(--uc-color-context-border) !important;
+        --default-focusring: none !important;
+        --scrollbar-color: var(--uc-color-surface) !important;
+        --organizer-focus-selected-background: var(
+            --uc-color-surface
+        ) !important;
+        --organizer-focus-selected-color: var(--uc-color-accent) !important;
+    }
+    treechildren,
+    richlistbox,
+    richlistitem {
+        border: 2px solid transparent !important;
+        border-radius: 6px !important;
+        padding: 4px !important;
+        border-radius: 2px !important;
+    }
+    treechildren::-moz-tree-row(selected),
+    richlistbox:where(:focus) > richlistitem[selected="true"],
+    richlistitem[selected="true"] {
+        background-color: var(--organizer-selected-background) !important;
+        border-radius: 6px !important;
+    }
+    treechildren::-moz-tree-row(selected):hover,
+    richlistbox:where(:focus) > richlistitem[selected="true"]:hover,
+    richlistitem[selected="true"]:hover {
+        background-color: var(--organizer-selected-background) !important;
+        border-radius: 6px !important;
+    }
+    treechildren::-moz-tree-row(hover),
+    richlistitem:hover {
+        background-color: var(--organizer-hover-background) !important;
+        border: 2px solid var(--organizer-focus-selected-color) !important;
+        border-radius: 6px !important;
+    }
+    treechildren::-moz-tree-cell-text(selected),
+    richlistbox:where(:focus) > richlistitem[selected="true"],
+    richlistitem[selected="true"] {
+        color: var(--organizer-focus-selected-color) !important;
+    }
+    treechildren::-moz-tree-cell-text(hover),
+    richlistitem:hover {
+        color: var(--organizer-focus-selected-color) !important;
+    }
+    #downloadsListBox:focus > richlistitem[selected] {
+        background-image: none !important;
+        background-clip: unset !important;
+        border: 2px solid var(--organizer-focus-selected-color) !important;
+        outline: none !important;
+    }
+    #placesView > splitter {
+        border-inline-end: none !important;
+    }
+    treecol,
+    treecolpicker {
+        background-color: var(--organizer-content-background) !important;
+    }
+    treecol,
+    .tree-columnpicker-button {
+        border-inline-start: none !important;
+    }
+    #placeContent {
+        padding: 4px !important;
+        border-radius: 2px !important;
+    }
+    #contentView treecol {
+        box-shadow: none !important;
+    }
+    #placesList {
+        padding: 4px 0 !important;
+    }
+    #placesView {
+        border-top: 0px solid var(--organizer-border-color) !important;
+    }
+    #placesToolbar {
+        border-bottom: 0 !important;
+    }
+    #searchFilter {
+        background-color: transparent !important;
+    }
+    #detailsPane {
+        background-color: var(--organizer-content-background) !important;
+        border-top: 1px solid var(--organizer-outline-color) !important;
+    }
+    #detailsPane input,
+    .expander-up,
+    .expander-down {
+        border: 1px solid var(--organizer-outline-color) !important;
+    }
 }
