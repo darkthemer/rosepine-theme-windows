@@ -1,0 +1,8 @@
+{
+  "radius": 10,
+  "perCornerRadius": "",
+  "smallRadius": 6,
+  "tooltipRadius": -1,
+  "roundMaximizedAndSnapped": "snappedAndMaximized",
+  "excludedPrograms[0]": ""
+}

@@ -7,5 +7,8 @@
   "unhide_duration_ms": 450,
   "engine": "modern",
   "tile_count": 35,
-  "excluded_programs[0]": ""
+  "excluded_programs[0]": "",
+  "close_animation": 0,
+  "close_direction": "down",
+  "hide_as_close": 1
 }

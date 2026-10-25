@@ -1,0 +1,9 @@
+{
+  "opacity": 75,
+  "trailMs": 50,
+  "hideWhenFast": 1,
+  "hideSpeed": 40,
+  "pauseInFullscreen": 1,
+  "trailOpacity": 50,
+  "drawSpeed": 20
+}
