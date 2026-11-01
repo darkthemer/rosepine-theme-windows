@@ -1,0 +1,38 @@
+/* nomacs-include ":/nomacs/stylesheet.css" */
+QWidget {
+    font-size: 8pt;
+}
+
+QMenu::icon {
+    right: -5px;
+}
+
+QMenu {
+    border: solid rgb(110, 106, 134);
+    border-width: 1px 1px 1px 1px;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* Specific Qt widgets */
+QPushButton:focus,
+QToolButton:focus,
+QLineEdit:focus,
+QTextEdit:focus,
+QPlainTextEdit:focus,
+QComboBox:focus,
+QSpinBox:focus,
+QDoubleSpinBox:focus,
+QCheckBox:focus,
+QRadioButton:focus,
+QSlider:focus,
+QListView:focus,
+QListWidget:focus,
+QTreeView:focus,
+QTableView:focus {
+    outline: none;
+}
